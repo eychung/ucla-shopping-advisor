@@ -1,0 +1,417 @@
+===========
+TreeRankSVM
+===========
+
+
+TreeRankSVM - A large scale training method for linear RankSVM based on red-black trees.
+
+
+:Authors:         `Antti Airola`
+                  `Tapio Pahikkala <http://staff.cs.utu.fi/~aatapa>`_,
+:Email:           firstname.lastname@utu.fi
+:Homepage:        `http://staff.cs.utu.fi/~aatapa/software/RankSVM <http://staff.cs.utu.fi/~aatapa/software/RankSVM>`_
+:Version:         0.1
+:License:         `The MIT License <LICENCE.TXT>`_
+:Date:            2011.06.10
+
+
+.. contents::
+
+
+Overview
+========
+
+The package implements a training algorithm for the linear ranking support vector machine (RankSVM). The software is based on bundle optimization, also known as the cutting plane method. The software supports both the ordinal regression type of setting with a single gloabal ranking, as well as query-structured data, where pairwise preferences exist only between examples belonging to the same query. For the bipartite ranking case, where only two possible scores exist, the method corresponds to optimizing an approximation of the area under the ROC curve.
+
+Let m be the size of training set, and s the average number of non-zero features per example. In the global ranking setting the method has O(ms+m*log(m)) training complexity, with no restrictions on the range of allowed utility scores. For query structured data the complexity is O(ms+m*log(m/q)), where the term q corresponds to the number of queries (assuming that the queries have roughly equal size). The training algorithm avoids having quadratic cost with respect to the training set size / query size by making use of self-balancing binary search trees during computations.
+
+The implementation is based on the RLScore package, and incorporates substantial amounts of its codebase. However, an installation of RLScore is not needed in order to run the TreeRankSVM.
+
+
+Support for different tasks
+===========================
+
+
+-  Classification
+   
+   -  optimizes for AUC (Area Under the ROC Curve)
+
+-  Ranking
+
+   -  optimizes for both global and query-wise ranking error
+
+
+
+Download
+========
+
+Download `RankSVM.zip <RankSVM.zip>`_ containing the python source code of RankSVM.
+
+
+Software dependencies
+=====================
+
+RankSVM is written in Python and thus requires a working installation of Python 2.6.x. The package is also dependent on the `NumPy 1.3.x <http://numpy.scipy.org/>`_ package for matrix operations, `SciPy 0.7.x <http://www.scipy.org/>`_ package for sparse matrix implementations and `CVXOPT <http://abel.ee.ucla.edu/cvxopt/>`_ convex optimization package. Newer versions should also work, but the package is not compatible with Python 3. The `psyco <http://psyco.sourceforge.net/>`_ package is automatically used if installed.
+
+
+Installation
+============
+
+While mainly a Python package, the package also incorporates C-code that requires compiling. The easiest way to get started is to download the source packages with pre-compiled C-code, which are available for 32 and 64 bit Linux (compiled in Ubuntu with gcc), and for the 32 bit Windows environments (compiled in Windows XP with Visual C++ 2008).
+
+Alternatively, you may try your luck by downloading the source package and running  
+
+python setup.py build_ext --inplace
+
+The setup script requires an installation of the Simplified Wrapper and Interface Generator (Swig) tool, Python header files and a C-compiler.
+
+
+Usage
+=====
+RankSVM is designed to be used by supplying a configuration file defining the learning task to the rank_svm program.
+
+The easiest way to use RankSVM is by modifying one of the example configuration files delivered with the distribution, to match your task (see 'examples' folder).
+
+To run RankSVM using a configuration defined in a file config.cfg, simply write::
+
+    python rank_svm.py config.cfg
+
+The structure of the configuration file is described in detail next.
+
+Configuration file
+------------------
+
+The configuration file consists of [Sections], which contain attribute=value pairs. The configuration file is case sensitive, the ordering within sections does not matter. Use # to start comment. None of the attributes are mandatory. However, setting certain attributes also requires some other attributes to be set. Sections the configuration file may have are `[Parameters]`_, `[Input]`_, `[Output]`_, and `[Readers]`_ sections.
+
+
+[Parameters]
+~~~~~~~~~~~~
+
+Parameters section contains the parameters supplied to the learner.
+
+
+verbose
+.......
+
+The boolean valued (True/False) verbosity parameter defines whether the program prints status information to stdout. Its default value is True.
+
+
+regparam
+........
+
+The regularization parameter controls the tradeoff between training set fit and model complexity. Too small value can lead to poor performance due to overfitting, too large due to underfitting. This parameter is the inverse of the C-parameter often used in SVM packages. The number of required iterations scales inversely with respect to this parameter.
+
+Default: 1
+
+epsilon
+.......
+
+Tolerance for termination criterion.
+
+Default: 0.001
+
+[Input]
+~~~~~~~
+
+The attributes in this section are names of `RankSVM variables`_ used inside the RankSVM software. The values of the attributes are filenames from which data is loaded to the variables. For example, the feature representations of the training examples are loaded into a variable of name `train_features`_. 
+ 
+All variables have their corresponding default file formats. If the data are loaded from a file which is not in the default format of the variable, the information about the format can be conveyed via the `[Readers]`_ section. Detailed descriptions of the variables and their default file formats are given in `RankSVM variables`_.
+
+    
+[Output]
+~~~~~~~~
+
+Analogously to the `[Input]`_ section, the attributes in this section are names of variables used inside RankSVM. The values of the attributes are names of files into which the contents of the variable are written to. The files are written in the default format of the variable in question.
+
+
+
+[Readers]
+~~~~~~~~~
+
+For reading in input files from non-standard format files, you will need to define also readers for the files. All the standard input variables have default readers associated with them, this option is needed only when reading data from non-standard files (e.g. reading features from a binary file instead of standard feature file).
+
+
+RankSVM variables
+-----------------
+
+RankSVM variables are used to refer to the different types of data inside the RankSVM software. The contents of the variables can be loaded from a file via the `[Input]`_ section.
+
+
+train_set
+~~~~~~~~~
+
+A single file containing the labels, features and optionally the qids of the training set in SVM-light / LibSVM format.
+
+
+train_features
+~~~~~~~~~~~~~~
+
+Features for training data. The default file format is the one described in `Featurefile`_.
+
+
+train_labels
+~~~~~~~~~~~~
+
+Labels for training data. The default file format is the one described in `Labelfile`_.
+
+
+train_qids
+~~~~~~~~~~
+
+Qids for the training data.
+
+
+
+model
+~~~~~
+
+This variable contains a model learned from a data. Model can be saved into a file via Python's pickle protocol.
+
+
+test_set
+~~~~~~~~~
+
+A single file containing the labels, features and optionally the qids of the test set in SVM-light / LibSVM format. In case the true labels for the test examples are unknown, you may instead use the "prediction_features" file that does not contain label information, or just supply some arbitrary numbers as test labels.
+
+prediction_features
+~~~~~~~~~~~~~~~~~~~
+
+Features for data one wishes to make predictions for. Prediction will be performed if a model is loaded from a file or if a predictor has been trained. The default file format is the one described in `Featurefile`_.
+
+
+test_labels
+~~~~~~~~~~~
+
+Correct labels for test data, supply these if you want to measure performance on test data. The default file format is the one described in `Labelfile`_.
+
+
+predicted_labels
+~~~~~~~~~~~~~~~~
+
+Predicted labels for test data. These are generated if a model is used to perform predictions. These are also needed if one wants to measure performance on test data. The default file format is the one described in `Labelfile`_.
+
+
+prediction_qids
+~~~~~~~~~~~~~~~
+
+Qids for test data, supply these if you want to evaluate performance on test data as an average over queries. The default file format is the one described in `Qid file`_.
+
+
+
+File formats
+============
+
+The following types of files can be supplied as input for rls_core
+
+`SVMLightFile`_
+- contains label, qid (optionally) and feature information combined in the same file.
+
+`Featurefile`_
+- the file containing attribute:value pairs for the training
+examples.
+
+`Labelfile`_
+- the file containing the values of the correct labels for training
+examples.
+
+`Qid file`_
+- File contains a query id for each training example. This can be used in label ranking tasks to define which document are related to the same query (information retrieval tasks), to define which parses correspond to the same sentence (parse ranking), etc.
+
+The convention used when indexing features or examples is to start the indexing from zero. Thus if there are m distinct features/examples, the possible indices are from the range [0 ... m-1].
+
+Below we give detailed descriptions of the file formats.
+
+SVMLightFile
+------------
+
+The examples are provided in the input file one per line using sparse representation. This file format combines all the information into one file. Alternatively features, labels and (optionally) qids can be supplied in different files, as described later.
+
+
+For a global ranking, the format of a line can be expressed as follows::
+    <line> .=. <target> <index>:<value> <index>:<value> ... <index>:<value> # <comment>
+    <target> .=. <float>
+    <index> .=. <integer>
+    <value> .=. <float>
+    <comment> .=. <string>
+    
+
+For query-structured data, the format of a line can be expressed as follows::
+    <line> .=. <target> qid:<index> <index>:<value> <index>:<value> ... <index>:<value> # <comment>
+    <target> .=. <float>
+    <index> .=. <integer>
+    <value> .=. <float>
+    <comment> .=. <string>
+ 
+The labels can be arbitrary real numbers.
+  
+The features of the examples are provided in tokens consisting of a feature index, a colon, and a real number indicating the value of the feature. The feature representation is sparse so that only the features whose values in the example differ from 0 are present in the line. Further, the feature indices have to be given from the smallest to the largest starting from zero.
+
+For example:
+
+2.3 0:0.43 3:0.12 9284:0.2
+4   3:7 8:15
+-2  2:1.5 3:8 1200:22
+2.7 1:4 8:12.2 1200:12
+
+Could define a global ranking, where the second example is ranked highest (utility 4), the last example next (utility 2.7) etc.
+
+2.3 qid:0 0:0.43 3:0.12 9284:0.2
+4   qid:0 3:7 8:15
+-2  qid:1 2:1.5 3:8 1200:22
+2.7 qid:1 1:4 8:12.2 1200:12
+
+Would indicate that the second example is preferred over the first one (4 > 2.3), and the fourth over the third one (2.7 > -2), but examples belonging to different queries do not generate preferences between them.
+
+Featurefile
+-----------
+
+In all tasks, the examples are provided in the input file one per line using sparse representation. Technically, the format of a line can be expressed as follows::
+
+    <line> .=. <index>:<value> <index>:<value> ... <index>:<value> # <comment>
+    <index> .=. <integer>
+    <value> .=. <float>
+    <comment> .=. <string>
+
+The features of the examples are provided in tokens consisting of a feature index, a colon, and a real number indicating the value of the feature. The feature representation is sparse so that only the features whose values in the example differ from 0 are present in the line. Further, the feature indices have to be given from the smallest to the largest starting from zero. For example, the line::
+
+    0:0.43 3:0.12 9284:0.2
+
+specifies an example, that has non-zero values for features number 0, 3 and 9284, and value 0 for all the other possible features. If an example has no non-zero valued attribute, then use ``0:0`` to differentiate this from empty line.
+
+Labelfile
+---------
+
+Labels are the correct output values associated with some set of examples. These are required in training supervised learners and in performance estimation, but naturally not when making predictions for new examples. The labels are provided in the label file so that each line corresponds to one training example, the examples being in the same order as in the feature file. The file label file has the following dense matrix format::
+
+    <line> .=. <value> # <comment>
+    <value> .=. <float>
+    <comment> .=. <string>
+
+Examples:
+
+Lines::
+
+    1
+    -1
+    1
+
+Could represent two positive (lines 1 and 3) and one negative examples in a bipartite ranking task.
+
+
+Lines::
+
+    1.123
+    3.433
+    0.0023
+
+could represent real valued utility scores for three examples.
+
+Qid file
+--------
+
+When performing ranking, the qid value is used to restrict the pairwise preference relations. By default, the preference relation covers all pairs of examples. Qids can be used to restrict which pairs are included in the relation. A pair of examples is included in the preference relation only, if the value of "qid" is the same for both examples.
+
+Each line in the query id file contains the id of the query the example belongs to. The format can be expressed as follows::
+
+    <line>.=. <qid>
+    <qid>.=. <integer>
+
+For example::
+
+    1
+    1
+    1
+    2
+    2
+
+Would mean that the first three examples belong to query number 1, and the last second to query number 2. In this case pairwise preferences would be observed between the first and second, first and third, second and third and fourth and fifth examples. However, preferences between other pairs would not be considered, as they have different qids.
+
+
+Examples
+========
+
+RankSVM is designed to be used by supplying a configuration file defining the learning task to the rank_svm program.
+
+The easiest way to use RankSVM is by modifying one of the example configuration files presented next, to match your task. The software supports a wide variety of different learning tasks, ranging from supervised learning to clustering and feature selection. Examples of typical use-cases for each type of task are provided below. All these configuration files can be found under the 'examples' folder, and run using the command 'python rank_svm.py ./examples/FILENAME'
+
+Training a model
+----------------
+
+'train.cfg'
+
+	#Trains RankSVM model using supplied data and parameters, writes output model
+	[Parameters]
+	regparam=0.1
+	epsilon=0.001
+
+	[Input]
+	train_features=./data/train.features
+	train_labels=./data/train.labels
+	train_qids=./data/train.qids
+
+	[Output]
+	model=./data/model.pckl
+
+Making predictions
+------------------
+
+'predict.cfg'
+
+	#Reads in model and data, makes predictions and writes these to output file.
+	[Input]
+	model=./data/model.pckl
+	prediction_features=./data/test.features
+
+	[Output]
+	predicted_labels=./data/predicted.labels
+
+Computing ranking performance
+-----------------------------
+
+'performance.cfg'
+
+	#Compares predicted and true labels, computes pairwise ranking error,
+	#averaged over queries. For global rankings, query file is not needed.
+	[Input]
+	predicted_labels=./data/predicted.labels
+	test_labels=./data/test.labels
+	test_qids=./data/test.qids
+
+All combined
+------------
+
+'all.cfg'
+
+	#Training, predictions and computation of test performance all in a single config file
+	[Parameters]
+	regparam=0.1
+	epsilon=0.001
+
+	[Input]
+	train_features=./data/train.features
+	train_labels=./data/train.labels
+	train_qids=./data/train.qids
+
+	prediction_features=./data/test.features
+	test_labels=./data/test.labels
+	test_qids=./data/test.qids
+
+	[Output]
+	predicted_labels=./data/predicted.labels
+	model=./data/model.pckl
+
+Advanced use
+============
+
+Getting the coefficients of the linear model
+--------------------------------------------
+
+By default, the software stored the learned model as a pickled Python object. However, in some cases it may be necessary to access the weights assigned to the different features directly. While doing this is not directly supported by the program, here is an example of a simple Python script that extracts this information from a model stored in a file called 'model.pckl', and writes the coefficients to a file 'coeff.txt'. Note that RankSVM models do not need a bias/intercept term, as such is irrelevant for ranking tasks.
+
+import numpy as np
+import cPickle
+f = open('model.pckl', 'rb')
+model = cPickle.load(f)
+f.close()
+W = model.W
+np.savetxt('coeff.txt', W)
