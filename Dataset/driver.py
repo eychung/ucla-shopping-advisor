@@ -19,8 +19,10 @@ def getScoreOfProduct(pid):
 		if score > 0:
 			score = score/count
 
-		print score
 		return score
 
-pid = userData.getRandProduct(userData.getRandProductAssociation())
-print "pid " + str(pid) + " has score " + str(getScoreOfProduct(pid))
+# We notice that the scores are around 2.5.
+def testGetScoreOfProduct():
+	for count in range(100):
+		pid = userData.getRandProduct(userData.getRandProductAssociation())
+		print "pid " + str(pid) + " has score " + str(getScoreOfProduct(pid))
