@@ -3,6 +3,14 @@ import math
 from random import randint
 from decimal import *
 
+""" 
+Similar to ShoppingAdvisor's synthetic dataset, we create relationships between
+user attributes explicitly rather than randomly, in order to make sense of the
+correlation of tags in a realisitic environment. Therefore, we constructed a
+static decision tree and introduced an incorrectness variable to consider all
+cases.
+"""
+
 # Note that "code" (2) and "industry" (3) can be tree nodes or leaf nodes.
 userAttributesLevel1 = ["work", "casual"]
 userAttributesLevel2 = ["code", "admin", "gaming", "applications"]
@@ -101,7 +109,7 @@ def createUserTable():
 			rating = round(rating, 1)
 
 			# For now, we only assume each association (leaf node) represents only one product.
-			writeFile.write(str(user) + ", " + str(product) + ", " + str(rating) + ", " + attributes + "\n")
+			writeFile.write(str(user) + "," + str(product) + "," + str(rating) + "," + attributes + "\n")
 
 	writeFile.close()
 
