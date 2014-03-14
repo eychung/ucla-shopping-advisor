@@ -1,10 +1,8 @@
 from random import randint
 
 uidcounter = 0
-oldproductAttributeList = ["lightWeight", "HighRam", "LongBatteryLife", "USB3.0", "HighDPI", "DiscreteGPU", "TurboBoost", "EthernetPort", "IntegratedWebCam", "BackLitKeyboard"] 
 productaAttributeList = ["DiscreteGPU", "LargeHDD", "IntegratedWebCam", "IntegratedMic", "HighDPI", "HighBattery", "Rugged", "BackLitKeyboard", "LightWeight", "HighRAM", "SDCard", "OpticalDrive"]
 
-oldwriteFile= open("E:\\Courses\\Winter2014\\cs-249BigData\\Project\\syntheticData.csv", mode="w")
 writeFile= open("syntheticData.csv", mode="w")
 
 attributeList = ""
