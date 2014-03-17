@@ -148,7 +148,7 @@ def createUserTable():
 			rating = min(round(rating, 1) + skewRating, 5.0)
 
 			# For now, we only assume each association (leaf node) represents only one product.
-			writeFile.write(str(user) + "," + str(pid) + "," + str(rating) + "," + str(attributes) + "\n")
+			writeFile.write(str(user) + "," + str(pid) + "," + str(rating) + "," + " ".join(attributes) + "\n")
 
 	writeFile.close()
 

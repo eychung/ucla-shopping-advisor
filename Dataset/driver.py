@@ -26,3 +26,5 @@ def testGetScoreOfProduct():
 	for count in range(100):
 		pid = userData.getRandProduct(userData.getRandProductAssociation())
 		print "pid " + str(pid) + " has score " + str(getScoreOfProduct(pid))
+
+testGetScoreOfProduct()
