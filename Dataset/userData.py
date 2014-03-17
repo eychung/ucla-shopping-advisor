@@ -35,6 +35,8 @@ numLevels = 5
 
 numErrorPrint = 0
 
+totalNumProducts = 343
+
 # Helper function for getRandUserAttributes.
 def swapBit(association, index):
 	# Special case where leaf nodes are not present in this part of the subtree.
@@ -90,20 +92,34 @@ def getRandUserAttributes(association):
 	
 	return attributes
 
+def parseProduct(line):
+	line = line.strip()
+	pid = line[:line.index(" ")]
+	technicalAttributes = line[line.index(" ")+1:]
+	return pid, technicalAttributes
+
 # Create 1000 users.
 def createUserTable():
 	writeFile = open("userData.csv", mode="w")
 	writeFile.write("UserId,ProductId,Rating,UserAttributes\n")
 
+	products = []
+
+	readFile = open("products.txt", mode='r')
+	for line in readFile:
+		products.append(line)
+
+	productIndex = 0
+
 	for user in range(1000):
 		numRatings = randint(1, 20)
 		for row in range(numRatings):
-			association = getRandProductAssociation()
-			product = getRandProduct(association)
-			encodedAttributes = getRandUserAttributes(association)
-			attributes = ""
-			for encoding in encodedAttributes:
-				attributes += userAttributesEncodedDictionary[encoding] + " "
+			if productIndex <= totalNumProducts-1:
+				product, attributes = parseProduct(products[productIndex])
+				productIndex += 1
+			else:
+				product, attributes = parseProduct(products[0])
+				productIndex = 1
 
 			rating = (randint(1, 10))/2.0
 			rating = round(rating, 1)

@@ -43,7 +43,11 @@ for i in range(24):
 		addedList.append(k)
 		attrList.append(pal[k])
 		finalProductSet[pid] = ' '.join(attrList)
-		print "Adding " + str(pid) + " " + finalProductSet[pid] + "\n"
+
+		# Associated product with a base pid.
+		split = finalProductSet[pid].index(" ")
+		finalProductSet[pid] = str(i) + " " + finalProductSet[pid][split+1:]
+ 
 		pid += 1
 
 newlim = len(baseProductSet)
@@ -58,15 +62,23 @@ for i in range(newlim):
 		addedList.append(k)
 		attrList.append(pal[k])
 		finalProductSet[pid] = ' '.join(attrList)
-		print "Adding " + str(pid) + " " + finalProductSet[pid] + "\n"
+
+		# Associated product with a base pid.
+		split = finalProductSet[pid].index(" ")
+		if i > 23:
+			finalProductSet[pid] = baseProductSet[i][:baseProductSet[i].index(" ")+1] + finalProductSet[pid][split+1:]
+		else:
+			finalProductSet[pid] = str(i) + " " + finalProductSet[pid][split+1:]
+
 		pid += 1
 		if pid > 200:
 			break
 
-for i in baseProductSet:
-	print i, baseProductSet[i]
+# Fixed starting base to include its own base pid.
+for i in range(24):
+	finalProductSet[i] = str(i) + " " + finalProductSet[i]
 
-with open('testop.txt', 'w') as outfile:
+with open('products.txt', 'w') as outfile:
 	for i in finalProductSet:
 		outfile.write(str(i) + ' ' + finalProductSet[i] + '\n')
 
