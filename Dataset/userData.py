@@ -66,6 +66,10 @@ def swapBit(association, index):
 def getRandProductAssociation():
 	return userAttributesLeafNodesEncoded[randint(0, 27)]
 
+# FIX: NEED MAPPING FOR 28-24 OF THE OTHER ASSOCIATIONS.
+def getProductAssociation(pid):
+	return userAttributesLeafNodesEncoded[pid]
+
 # Randomly selects a product based off encoding.
 def getRandProduct(association):
 	return randint(1, 200)
@@ -90,13 +94,22 @@ def getRandUserAttributes(association):
 			numErrorPrint += 1
 		currentMaxLevel -= 1
 	
-	return attributes
+	decodedAttributes = []
+	for item in attributes:
+		decodedAttributes.append(userAttributesEncodedDictionary[item])	
+	
+	return decodedAttributes
 
 def parseProduct(line):
 	line = line.strip()
 	pid = line[:line.index(" ")]
-	technicalAttributes = line[line.index(" ")+1:]
-	return pid, technicalAttributes
+	
+	part = line[line.index(" ")+1:]
+	base = part[:part.index(" ")]
+
+	technicalAttributes = part[part.index(" ")+1:]
+
+	return pid, base, technicalAttributes
 
 # Create 1000 users.
 def createUserTable():
@@ -113,19 +126,29 @@ def createUserTable():
 
 	for user in range(1000):
 		numRatings = randint(1, 20)
+		userPreferences = []
 		for row in range(numRatings):
 			if productIndex <= totalNumProducts-1:
-				product, attributes = parseProduct(products[productIndex])
+				pid, base, technicalAttributes = parseProduct(products[productIndex])
 				productIndex += 1
 			else:
-				product, attributes = parseProduct(products[0])
+				pid, base, technicalAttributes = parseProduct(products[0])
 				productIndex = 1
 
+			attributes = getRandUserAttributes(getProductAssociation(int(base)))
+			skewRating = 0			
+
+			for item in attributes:
+				if item not in userPreferences:
+					userPreferences.append(item)
+				else:
+					skewRating = 1
+
 			rating = (randint(1, 10))/2.0
-			rating = round(rating, 1)
+			rating = min(round(rating, 1) + skewRating, 5.0)
 
 			# For now, we only assume each association (leaf node) represents only one product.
-			writeFile.write(str(user) + "," + str(product) + "," + str(rating) + "," + attributes + "\n")
+			writeFile.write(str(user) + "," + str(pid) + "," + str(rating) + "," + str(attributes) + "\n")
 
 	writeFile.close()
 
