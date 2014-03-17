@@ -1,0 +1,7 @@
+Only the base 24 products (assigned manually to the leaf nodes of the shopping advisor tree are considered for training using RankSVM)
+
+Nodes are numbered starting from index 0, moving down L to R from the root along each level.
+
+Training node 0 (ie the root node, which is null in terms of user attributes) is impossible since the labels are +1 for all 24 base products (no negative data available)
+
+
