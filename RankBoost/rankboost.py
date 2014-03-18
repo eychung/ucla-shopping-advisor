@@ -82,7 +82,7 @@ class BipartiteRankBoost(BaseEnsemble):
         
         # (0,1) class labels hard-coded for now..
         assert np.max(y) == 1
-        assert np.min(y) == 0
+        assert np.min(y) == -1
 
         # first sort on y, positive examples come first...
         sortidx = y.argsort()[::-1]

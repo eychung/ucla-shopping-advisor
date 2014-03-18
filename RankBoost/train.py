@@ -2,11 +2,11 @@ import numpy as np
 import cPickle
 import csv
 import itertools
-from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.cross_validation import ShuffleSplit, KFold
-#from rankboost import BipartiteRankBoost
+from rankboost import BipartiteRankBoost
 import random
 from sklearn.externals.joblib import Parallel, delayed
+
 
 def crossValidation(labels, features, classifier, train_authors, test_authors, pairwise=False):
 
@@ -177,26 +177,22 @@ def scoreAuthor(ranked_labels):
     return score
 
 if __name__ == '__main__':
-    #classifier = BipartiteRankBoost(n_estimators=50, verbose=1)
+	classifier = BipartiteRankBoost(n_estimators=50, verbose=1)
 
-    classifier = GradientBoostingClassifier(n_estimators=800,
-                                            subsample=0.9,
-                                            learning_rate=0.05,
-                                            max_depth=3,
-                                            random_state=1,
-                                            verbose=0)
-
-    feature_list = ['nauthors', 'npapers', 'year', 'nattrib', 'ncoauthor', 'paperrank', 'globalpaperrank', 'nappear']
     
-    trainfeatures = loadFeatures(feature_list, mode='train')
-    trainlabels = cPickle.load(open('labels.train', 'rb')) 
+	feature_list = ["DiscreteGPU", "LargeHDD", "IntegratedWebCam", "IntegratedMic", "HighDPI", "HighBattery", "Rugged", "BackLitKeyboard", "LightWeight", "HighRAM", "SDCard", "OpticalDrive"]
+
+	trainfeatures = loadFeatures(feature_list, mode='train')
+	trainlabels = cPickle.load(open('labels.train', 'rb'))
+
+	print "train features and train labels set" 
         
-    cv_authors = KFold(len(trainlabels), n_folds=5, indices=True, shuffle=True, random_state=1)
+	cv_authors = KFold(len(trainlabels), n_folds=5, indices=True, shuffle=True, random_state=1)
     
-    score = Parallel(n_jobs=-1)(delayed(crossValidation)(trainlabels, trainfeatures, classifier, train_authors, test_authors, pairwise=False) for train_authors, test_authors in cv_authors)
+	score = Parallel(n_jobs=-1)(delayed(crossValidation)(trainlabels, trainfeatures, classifier, train_authors, test_authors, pairwise=False) for train_authors, test_authors in cv_authors)
 
-    score = np.array(score)
-    print 'score mean, std, mean-std:', score.mean(), score.std(), score.mean() - score.std()
+	score = np.array(score)
+	print 'score mean, std, mean-std:', score.mean(), score.std(), score.mean() - score.std()
     
     #testfeatures = loadFeatures(feature_list, mode='test')
     #testlabels = cPickle.load(open('labels.test', 'rb')) 

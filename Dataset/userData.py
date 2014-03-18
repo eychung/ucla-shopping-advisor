@@ -102,12 +102,12 @@ def getRandUserAttributes(association):
 
 def parseProduct(line):
 	line = line.strip()
-	pid = line[:line.index(" ")]
+	pid = line[:line.index(",")]
 	
-	part = line[line.index(" ")+1:]
-	base = part[:part.index(" ")]
+	part = line[line.index(",")+1:]
+	base = part[:part.index(",")]
 
-	technicalAttributes = part[part.index(" ")+1:]
+	technicalAttributes = part[part.index(",")+1:]
 
 	return pid, base, technicalAttributes
 
@@ -149,6 +149,7 @@ def createUserTable():
 
 			# For now, we only assume each association (leaf node) represents only one product.
 			writeFile.write(str(user) + "," + str(pid) + "," + str(rating) + "," + " ".join(attributes) + "\n")
+			#writeFile.write(str(user) + "," + str(pid) + "," + str(rating) + "," + str(technicalAttributes) + "\n")
 
 	writeFile.close()
 

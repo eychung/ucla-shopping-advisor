@@ -1,10 +1,10 @@
 from random import randint
 
 # Product attribute list
-pal = ["DiscreteGPU", "LargeHDD", "IntegratedWebCam", "IntegratedMic", "HighDPI", "HighBattery", "Rugged", "BackLitKeyboard", "LightWeight", "HighRAM", "SDCard", "OpticalDrive"]
+global pal = ["DiscreteGPU", "LargeHDD", "IntegratedWebCam", "IntegratedMic", "HighDPI", "HighBattery", "Rugged", "BackLitKeyboard", "LightWeight", "HighRAM", "SDCard", "OpticalDrive"]
 
 # the ones that we came up with for the leaf nodes (24 base cases)
-baseProductSet = { 0 : pal[0] + " " + pal[1] + " " + pal[4] + " " + pal[7] + " " + pal[9],
+global baseProductSet = { 0 : pal[0] + " " + pal[1] + " " + pal[4] + " " + pal[7] + " " + pal[9],
 1 : pal[0] + " " + pal[1] + " " + pal[4] + " " + pal[7] + " " + pal[9] + " " + pal[11],
 2 : pal[0] + " " + pal[1] + " " + pal[4] + " " + pal[9] + " " + pal[10],
 3 : pal[0] + " " + pal[1] + " " + pal[2] + " " + pal[4] + " " + pal[9],
@@ -46,7 +46,7 @@ for i in range(24):
 
 		# Associated product with a base pid.
 		split = finalProductSet[pid].index(" ")
-		finalProductSet[pid] = str(i) + " " + finalProductSet[pid][split+1:]
+		finalProductSet[pid] = str(i) + "," + finalProductSet[pid][split+1:]
  
 		pid += 1
 
@@ -68,7 +68,7 @@ for i in range(newlim):
 		if i > 23:
 			finalProductSet[pid] = baseProductSet[i][:baseProductSet[i].index(" ")+1] + finalProductSet[pid][split+1:]
 		else:
-			finalProductSet[pid] = str(i) + " " + finalProductSet[pid][split+1:]
+			finalProductSet[pid] = str(i) + "," + finalProductSet[pid][split+1:]
 
 		pid += 1
 		if pid > 200:
@@ -76,9 +76,9 @@ for i in range(newlim):
 
 # Fixed starting base to include its own base pid.
 for i in range(24):
-	finalProductSet[i] = str(i) + " " + finalProductSet[i]
+	finalProductSet[i] = str(i) + "," + finalProductSet[i]
 
 with open('products.txt', 'w') as outfile:
 	for i in finalProductSet:
-		outfile.write(str(i) + ' ' + finalProductSet[i] + '\n')
+		outfile.write(str(i) + ',' + finalProductSet[i] + '\n')
 
