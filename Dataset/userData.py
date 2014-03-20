@@ -15,6 +15,7 @@ userTableFilePath = "userData.csv"
 productTableFilePath = "products.txt"
 trainFilePath = "Train.csv"
 testFilePath = "Test.csv"
+productUserAttributesFilePath = "productUserAttributes.csv"
 
 # Note that "code" (2) and "industry" (3) can be tree nodes or leaf nodes.
 userAttributesLevel1 = ["work", "casual"]
@@ -76,12 +77,14 @@ def getUserAttributes(association):
 	global numErrorPrint
 	attributes = []
 	decodedAttributes = []
+	absolute = []
 	correct = []
 	incorrect = []
 	currentMaxLevel = len(association)
 
 	for index in range(len(association)):
 		node = association[:index+1]
+		absolute.append(userAttributesEncodedDictionary[node])
 		if randint(1, 100) <= correctPathProbability:
 			attributes.append(node)
 			correct.append(userAttributesEncodedDictionary[node])
@@ -96,7 +99,7 @@ def getUserAttributes(association):
 			numErrorPrint += 1
 		currentMaxLevel -= 1
 	
-	return correct, incorrect
+	return absolute, correct, incorrect
 
 def parseProduct(line):
 	line = line.strip()
@@ -133,7 +136,7 @@ def createTrainingSet():
 				pid, base, technicalAttributes = parseProduct(products[0])
 				productIndex = 1
 
-			correct, incorrect = getUserAttributes(getProductAssociation(int(base)))
+			absolute, correct, incorrect = getUserAttributes(getProductAssociation(int(base)))
 			skewRating = 0			
 
 			for item in correct + incorrect:
@@ -176,7 +179,7 @@ def createTestingSet():
 				pid, base, technicalAttributes = parseProduct(products[0])
 				productIndex = 1
 
-			correct, incorrect = getUserAttributes(getProductAssociation(int(base)))
+			absolute, correct, incorrect = getUserAttributes(getProductAssociation(int(base)))
 			skewRating = 0			
 
 			for item in correct + incorrect:
@@ -194,7 +197,27 @@ def createTestingSet():
 	testFile.close()
 	userTableFile.close()
 
+# Should be in productGenerator.py file.
+def createProductUserAttributesFile():
+	productUserAttributesFile = open(productUserAttributesFilePath, mode='w')
+	productUserAttributesFile.write("ProductId,UserAttributes\n")
+
+	products = []
+
+	productTableFile = open(productTableFilePath, mode='r')
+	for line in productTableFile:
+		products.append(line)
+
+	# Assume product id is from 0-342 (343 total).
+	for productId in range(totalNumProducts):
+		pid, base, technicalAttributes = parseProduct(products[productId])
+		absolute, correct, incorrect = getUserAttributes(getProductAssociation(int(base)))
+		productUserAttributesFile.write(str(productId) + ',' + ' '.join(absolute) + '\n')
+
+	productUserAttributesFile.close()
 
 if __name__ == '__main__':
 	createTrainingSet()
 	createTestingSet()
+
+	createProductUserAttributesFile()
