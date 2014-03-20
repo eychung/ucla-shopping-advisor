@@ -2,12 +2,14 @@ import numpy as np
 import cPickle
 import csv
 import itertools
-from sklearn.cross_validation import ShuffleSplit, KFold
-from rankboost import BipartiteRankBoost
 import random
-from sklearn.externals.joblib import Parallel, delayed
 import sklearn
+from sklearn.cross_validation import ShuffleSplit, KFold
+from sklearn.externals.joblib import Parallel, delayed
+from rankboost import BipartiteRankBoost
 import features as feat
+
+trainPath = "train/"
 
 # features: from loadFeatures
 # labels: labels.train
@@ -41,7 +43,7 @@ def loadFeatures(namelist, mode):
 	featurelist = []
 	for name in namelist:
 		filename = name + '.' + mode
-		featurelist.append(cPickle.load(open(filename, 'rb')))
+		featurelist.append(cPickle.load(open(trainPath + filename, 'rb')))
 	features = []
 	for feats in zip(*featurelist):
 		features.append([list(tup) for tup in zip(*feats)])
@@ -63,16 +65,19 @@ def scoreProduct(ranked_labels):
 if __name__ == '__main__':
 	classifier = BipartiteRankBoost(n_estimators=50, verbose=1)
 
-	feature_list = feat.userAttributes
+	feature_list = ['user_attributes'] 
 
+	# trainfeatures: feature list of user attributes, where each user attribute has a list of relevant products.
+	# trainlabels: opens Pickle file containing list of products that each contain a list of 0, 1 encoded user attributes.
 	trainfeatures = loadFeatures(feature_list, mode='train')
-	trainlabels = cPickle.load(open('labels.train', 'rb'))
-
-	print "train features and train labels set" 
+	print len(trainfeatures)
+	#print trainfeatures
+	trainlabels = cPickle.load(open(trainPath + 'labels.train', 'rb'))
+	print len(trainlabels)
+	print "Loaded train features and train labels" 
         
 	cv_products = KFold(len(trainlabels), n_folds=5, indices=True, shuffle=True, random_state=1)
-	for train_products, test_products in cv_products:
-		print train_products
+	print "Set up KFold."
     
 	score = Parallel(n_jobs=-1)(delayed(crossValidation)(trainlabels, trainfeatures, classifier, train_products, test_products, pairwise=False) for train_products, test_products in cv_products)
 

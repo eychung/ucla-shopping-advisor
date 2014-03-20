@@ -8,10 +8,12 @@ dataPath = "../Dataset/"
 trainPath = "train/"
 testPath = "test/"
 
-userTableFile = "userData.csv"
-productTableFile = "products.txt"
-trainFile = "Train.csv"
-testFile = "Test.csv"
+userTableFilePath = "userData.csv"
+productTableFilePath = "products.txt"
+trainFilePath = "Train.csv"
+testFilePath = "Test.csv"
+compressedTrainFilePath = "Compressed Train.csv"
+productUserAttributesFilePath = "productUserAttributes.csv"
 
 # Note that "code" (2) and "industry" (3) can be tree nodes or leaf nodes.
 userAttributesLevel1 = ["work", "casual"]
@@ -30,17 +32,21 @@ class Review():
 		self.product = -1
 		self.rating = -1
 		self.userAttributes = []
+		self.reviewedBy = []
 
 class Product():
 	def __init__(self):
 		self.base = -1
 		self.technicalAttributes = []
+		self.reviewedBy = []
+		self.possibleUserAttributes = []
 
 def loadUsersProducts():
 	users = {}
+	reviews = {}
 	products = {}
 	
-	with open(dataPath + userTableFile) as csvfile:
+	with open(dataPath + userTableFilePath) as csvfile:
 		reader = csv.reader(csvfile)
 		reader.next()
 		for userId, productId, rating, userAttributes in reader:
@@ -52,13 +58,20 @@ def loadUsersProducts():
 			userReview.rating = rating
 			userReview.userAttributes.append(userAttributes)
 			users[userId].reviews.append(userReview)
+			if productId not in products:
+				products[productId] = Product()
+			products[productId].reviewedBy.append(userId)
+			for userAttribute in userAttributes.split(' '):
+				if userAttribute not in products[productId].possibleUserAttributes:
+					products[productId].possibleUserAttributes.append(userAttribute)
 
-	with open(dataPath + productTableFile) as csvfile:
+	with open(dataPath + productTableFilePath) as csvfile:
 		reader = csv.reader(csvfile)
 		reader.next()
 		for productId, base, technicalAttributes in reader:
 			productId = int(productId)
-			products[productId] = Product()
+			if productId not in products:
+				products[productId] = Product()
 			products[productId].base = base
 			products[productId].technicalAttributes.append(technicalAttributes)
 	
@@ -76,14 +89,14 @@ def saveFeature(feature, name, mode):
 
 def csvGenerator(mode):
 	if mode == 'train':
-		with open(dataPath + trainFile) as csvfile:
+		with open(dataPath + trainFilePath) as csvfile:
 			reader = csv.reader(csvfile)
 			reader.next()
 			for productId, rating, correctUserAttributes, incorrectUserAttributes in reader:
 				yield productId, correctUserAttributes, incorrectUserAttributes
 
 	elif mode == 'test':
-		with open(dataPath + testFile) as csvfile:
+		with open(dataPath + testFilePath) as csvfile:
 			reader = csv.reader(csvfile)
 			reader.next()
 			for productId, rating, userAttributes in reader:
@@ -93,20 +106,28 @@ def csvGenerator(mode):
 		print 'mode must be "train" or "test"'
 		raise ValueError
 
+def createCompressedTrainFile(products):
+	compressedTrainFile = open(dataPath + compressedTrainFilePath, mode='w')
+	compressedTrainFile.write("ProductId,PossibleUserAttributes\n")
+	for productId in products:
+		compressedTrainFile.write(str(productId) + ',' + ' '.join(products[productId].possibleUserAttributes) + '\n')
+	compressedTrainFile.close()
+
+# Returns a list of products, each with a list of possible user attributes collected from a compressed train file.
 def labels(mode='train'):
+	global userAttributes
 	labels = []
 	if mode == 'train':
-		with open(dataPath + trainFile) as csvfile:
+		with open(dataPath + compressedTrainFilePath) as csvfile:
 			reader = csv.reader(csvfile)
 			reader.next()
-			for productId, rating, correctUserAttributes, incorrectUserAttributes in reader:
+			for productId, possibleUserAttributes in reader:
 				mylabels = []
-				correctUserAttributes = [ua for ua in correctUserAttributes.split(' ')]
-				incorrectUserAttributes = [ua for ua in incorrectUserAttributes.split(' ')]
-				for cua in correctUserAttributes:
-					mylabels.append(1) # 1 = correct
-				for iua in incorrectUserAttributes:
-					mylabels.append(0) # 0 - incorrect
+				for userAttribute in userAttributes:
+					if userAttribute in possibleUserAttributes:
+						mylabels.append(1)
+					else:
+						mylabels.append(0)
 				labels.append(mylabels)
 	
 	elif mode == 'test':
@@ -119,25 +140,28 @@ def labels(mode='train'):
 
 	saveFeature(labels, name='labels', mode=mode)
 
+# Creates a file with a list of products, each with a list of correct user attributes.
 def createFeatureFiles(users, products, mode='train'):
-	# Create a file for each user attribute (node in decision tree).
-	for userAttribute in userAttributes:
-		features = []
-		# Iterate through each user.
-		for userId in users:
-			myfeatures = []
-			# Iterate through each product (that has been reviewed by user).
-			for productReview in users[userId].reviews:
-				if userAttribute in productReview.userAttributes:
-					myfeatures.append(1) # 1 = present
-				else:
-					myfeatures.append(0) # 0 = not present
-			features.append(myfeatures)
+	global userAttributes
+	features = []
+	with open(dataPath + productUserAttributesFilePath) as csvfile:
+		reader = csv.reader(csvfile)
+		reader.next()
 
-		saveFeature(features, name=userAttribute, mode=mode)
+		for productId, attributes in reader:
+			myfeatures = []
+			for userAttribute in userAttributes:
+				if userAttribute in attributes:
+					myfeatures.append(1)
+				else:
+					myfeatures.append(0)
+			features.append(myfeatures)			
+
+		saveFeature(features, name='user_attributes', mode=mode)
 
 if __name__ == '__main__':
 	users, products = loadUsersProducts()
+	createCompressedTrainFile(products)
 	
 	for mode in ['train', 'test']:
 		labels(mode=mode)

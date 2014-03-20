@@ -1,0 +1,344 @@
+ProductId,PossibleUserAttributes
+0,work code1 graphic_intensive game_dev graphic_design game_engine
+1,work code1 graphic_intensive game_dev game_engine graphic_design
+2,work code1 graphic_intensive artist vector animator
+3,work graphic_intensive artist animator code1 game_engine
+4,work code1 data_intensive scientist research graphic_design
+5,work code1 data_intensive scientist industry1 industry2 research
+6,work code1 data_intensive engineer school industry2 research
+7,work code1 data_intensive engineer industry2 industry1 school
+8,work admin comm high_end_user advance_usage low_end_user
+9,work admin advance_usage comm low_end_user industry3 high_end_user
+10,work admin advance_usage data operator
+11,work admin advance_usage data system_admin
+12,work admin simple_usage word_processing student
+13,work admin simple_usage word_processing industry3
+14,work admin simple_usage pos small_business large_business student
+15,work admin simple_usage pos large_business system_admin industry3 small_business
+16,casual gaming hardcore repetitive
+17,casual gaming hardcore strategic artist repetitive
+18,casual gaming softcore real_time
+19,casual gaming softcore casino_games designing
+20,casual applications browsing media pictures long_form
+21,casual applications browsing media video short_form social
+22,casual browsing website online_gaming applications social
+23,casual applications website social browsing online_gaming
+24,work code1 graphic_intensive game_dev graphic_design game_engine
+25,work code1 graphic_intensive game_dev graphic_design
+26,work code1 graphic_intensive game_dev graphic_design vector game_engine
+27,work code1 graphic_intensive game_dev graphic_design game_engine vector
+28,work code1 graphic_intensive game_dev graphic_design game_engine vector
+29,work code1 graphic_intensive game_dev game_engine animator graphic_design
+30,work code1 graphic_intensive game_dev game_engine graphic_design
+31,work code1 graphic_intensive game_dev game_engine graphic_design
+32,work code1 graphic_intensive game_dev game_engine animator
+33,work code1 graphic_intensive game_dev game_engine animator
+34,work code1 graphic_intensive game_dev game_engine
+35,work code1 graphic_intensive artist vector animator graphic_design
+36,work code1 graphic_intensive artist vector graphic_design animator
+37,work code1 graphic_intensive artist vector graphic_design animator
+38,work code1 graphic_intensive artist vector animator
+39,work code1 graphic_intensive artist vector animator school
+40,work code1 graphic_intensive artist animator game_engine
+41,work code1 artist animator graphic_intensive vector
+42,work code1 graphic_intensive artist animator game_engine
+43,work code1 graphic_intensive artist animator vector
+44,work code1 graphic_intensive artist animator
+45,work code1 data_intensive scientist research school
+46,work code1 data_intensive scientist research industry1
+47,work code1 data_intensive scientist research school
+48,work code1 data_intensive scientist research school industry1
+49,work code1 data_intensive scientist research industry1 graphic_design
+50,work code1 data_intensive scientist industry1
+51,work code1 data_intensive scientist industry1
+52,work code1 data_intensive scientist industry1
+53,work code1 data_intensive scientist industry1 research
+54,work code1 data_intensive scientist industry1 research
+55,work code1 data_intensive engineer school
+56,work code1 data_intensive engineer school
+57,work code1 data_intensive engineer school research industry2
+58,work code1 data_intensive engineer school vector industry2
+59,work code1 data_intensive engineer school research
+60,code1 data_intensive engineer industry2 work school industry1
+61,work code1 data_intensive engineer industry2
+62,work code1 data_intensive engineer industry2
+63,work code1 engineer industry2 data_intensive
+64,work data_intensive industry2 code1 engineer school industry1 animator
+65,work admin advance_usage comm high_end_user
+66,work admin advance_usage comm high_end_user
+67,work admin advance_usage comm high_end_user
+68,work admin advance_usage comm high_end_user low_end_user
+69,work admin advance_usage comm high_end_user
+70,work admin advance_usage comm high_end_user operator low_end_user
+71,work admin advance_usage comm low_end_user
+72,work admin advance_usage comm low_end_user
+73,work admin advance_usage comm low_end_user industry3 system_admin
+74,work admin advance_usage comm low_end_user high_end_user system_admin
+75,work admin advance_usage comm low_end_user system_admin high_end_user
+76,work admin advance_usage data operator system_admin
+77,work admin advance_usage data operator system_admin
+78,work admin advance_usage data operator system_admin online_gaming
+79,work admin advance_usage data operator high_end_user system_admin
+80,work admin advance_usage data operator system_admin high_end_user vector
+81,work admin advance_usage data system_admin
+82,work admin advance_usage data system_admin operator
+83,work admin advance_usage data system_admin low_end_user
+84,work admin advance_usage data system_admin large_business
+85,work admin advance_usage data system_admin operator
+86,work admin advance_usage data system_admin operator
+87,work admin simple_usage word_processing student industry3
+88,work admin simple_usage word_processing student industry3
+89,work admin simple_usage word_processing student small_business research
+90,work admin simple_usage word_processing student
+91,work admin simple_usage word_processing student industry3 small_business
+92,work admin simple_usage word_processing industry3 industry1 large_business
+93,work admin simple_usage word_processing industry3 student low_end_user
+94,work admin simple_usage word_processing industry3
+95,work admin simple_usage word_processing industry3 large_business industry1
+96,work admin simple_usage word_processing industry3 large_business student industry1
+97,work admin simple_usage pos small_business
+98,work admin simple_usage pos small_business student operator
+99,work admin simple_usage pos small_business large_business student operator
+100,work admin simple_usage pos small_business operator large_business
+101,work admin simple_usage pos small_business large_business
+102,work admin simple_usage pos small_business student large_business
+103,work admin simple_usage pos large_business small_business
+104,work admin simple_usage pos large_business
+105,work admin simple_usage pos large_business industry2 small_business
+106,work admin simple_usage pos large_business art
+107,work admin simple_usage pos large_business industry3 small_business
+108,casual gaming hardcore repetitive real_time
+109,casual gaming hardcore repetitive
+110,casual gaming hardcore repetitive media
+111,casual gaming hardcore repetitive strategic
+112,casual gaming hardcore repetitive real_time strategic
+113,casual gaming hardcore repetitive game_dev
+114,casual gaming hardcore strategic
+115,casual gaming hardcore strategic
+116,casual gaming hardcore strategic
+117,casual gaming hardcore strategic
+118,casual gaming hardcore strategic
+119,casual gaming softcore real_time repetitive
+120,casual gaming softcore real_time
+121,casual gaming softcore real_time
+122,casual gaming softcore real_time writing casino_games
+123,casual gaming softcore real_time
+124,casual gaming softcore casino_games real_time
+125,casual gaming softcore casino_games
+126,casual gaming softcore casino_games
+127,casual gaming softcore casino_games strategic
+128,casual gaming casino_games softcore
+129,applications browsing media pictures casual online_gaming
+130,casual applications browsing media pictures online_gaming high_end_user
+131,casual applications browsing media pictures video
+132,casual applications browsing media pictures video long_form
+133,casual applications browsing media pictures video
+134,casual applications browsing media pictures video online_gaming
+135,casual applications browsing media video
+136,casual applications browsing media video pictures short_form
+137,casual applications browsing media video pictures social
+138,casual applications browsing media video short_form social
+139,casual applications browsing media video short_form
+140,casual applications browsing media video
+141,casual applications browsing website online_gaming social pictures
+142,casual applications browsing website online_gaming social
+143,casual applications browsing website online_gaming pictures social code2
+144,casual applications browsing website online_gaming social
+145,casual applications browsing website online_gaming social pictures
+146,casual applications browsing website social
+147,casual applications browsing website social video
+148,casual applications browsing website social art online_gaming
+149,casual browsing website social applications online_gaming
+150,casual applications browsing website social
+151,casual applications browsing website social online_gaming art
+152,work code1 graphic_intensive game_dev graphic_design
+153,work code1 graphic_intensive game_dev graphic_design game_engine
+154,work code1 graphic_intensive game_dev graphic_design research game_engine
+155,work code1 graphic_intensive game_dev graphic_design high_end_user
+156,work code1 graphic_intensive game_dev graphic_design vector
+157,work code1 graphic_intensive game_dev game_engine animator graphic_design
+158,work code1 graphic_intensive game_dev game_engine graphic_design
+159,work code1 graphic_intensive game_dev game_engine graphic_design
+160,work code1 graphic_intensive game_dev game_engine animator
+161,work code1 graphic_intensive game_dev game_engine animator graphic_design
+162,work code1 graphic_intensive game_dev game_engine
+163,work code1 graphic_intensive artist vector animator
+164,work code1 graphic_intensive artist vector
+165,work code1 graphic_intensive artist vector animator
+166,work code1 graphic_intensive artist vector graphic_design
+167,work code1 graphic_intensive artist vector graphic_design animator
+168,work code1 graphic_intensive artist animator vector
+169,work code1 graphic_intensive artist animator vector
+170,work code1 graphic_intensive artist animator vector system_admin
+171,work code1 graphic_intensive animator artist industry2
+172,work code1 graphic_intensive artist animator vector
+173,work code1 data_intensive scientist research student industry1
+174,work code1 data_intensive scientist research industry1
+175,work code1 data_intensive scientist research
+176,work code1 scientist research student data_intensive industry1 graphic_design
+177,work code1 data_intensive scientist research industry1
+178,work data_intensive scientist industry1 code1
+179,work code1 data_intensive scientist industry1
+180,work code1 data_intensive scientist industry1
+181,work code1 data_intensive scientist industry1 research
+182,work code1 data_intensive scientist industry1 research
+183,work code1 data_intensive school engineer research industry2
+184,work code1 data_intensive engineer school industry2
+185,work code1 data_intensive engineer school industry2
+186,work code1 data_intensive engineer school vector
+187,work code1 data_intensive engineer school industry2
+188,work code1 data_intensive engineer industry2 school
+189,work code1 data_intensive engineer industry2
+190,code1 data_intensive engineer industry2 work industry1 school
+191,work code1 data_intensive engineer industry2 industry1 large_business
+192,work code1 data_intensive engineer industry2
+193,work admin advance_usage comm high_end_user low_end_user operator
+194,work admin advance_usage comm high_end_user operator student low_end_user
+195,work admin advance_usage comm high_end_user
+196,work admin advance_usage comm high_end_user low_end_user
+197,work admin advance_usage comm high_end_user
+198,work admin advance_usage comm high_end_user pictures
+199,work admin advance_usage comm low_end_user industry3
+200,work advance_usage comm low_end_user admin high_end_user industry3
+201,work admin advance_usage data operator vector high_end_user small_business
+202,work admin data advance_usage system_admin
+203,work admin simple_usage word_processing student
+204,work admin simple_usage word_processing industry3 large_business industry1 low_end_user
+205,work admin simple_usage pos small_business large_business operator
+206,work admin simple_usage pos large_business industry3
+207,casual gaming hardcore repetitive
+208,casual gaming hardcore strategic repetitive casino_games
+209,casual gaming softcore real_time
+210,casual gaming softcore casino_games strategic engineer
+211,casual applications browsing media pictures
+212,casual applications browsing media video short_form pictures
+213,casual applications browsing website online_gaming
+214,casual applications browsing website social system_admin online_gaming
+215,work code1 graphic_intensive game_dev graphic_design game_engine research
+216,work code1 graphic_intensive game_dev graphic_design
+217,code1 graphic_intensive game_dev graphic_design work game_engine research
+218,code1 graphic_intensive game_dev graphic_design work game_engine
+219,work code1 graphic_intensive game_dev graphic_design game_engine
+220,work code1 graphic_intensive game_dev game_engine
+221,work code1 graphic_intensive game_dev game_engine graphic_design
+222,work code1 graphic_intensive game_dev game_engine graphic_design
+223,work code1 graphic_intensive game_dev game_engine graphic_design
+224,work code1 graphic_intensive game_dev game_engine graphic_design
+225,work code1 graphic_intensive game_dev game_engine graphic_design animator
+226,work code1 graphic_intensive artist vector
+227,work code1 graphic_intensive artist vector
+228,work code1 graphic_intensive artist vector graphic_design
+229,work code1 graphic_intensive artist vector
+230,work graphic_intensive artist vector code1
+231,work code1 graphic_intensive artist animator game_engine
+232,work code1 graphic_intensive artist animator industry2
+233,work code1 graphic_intensive artist animator vector
+234,work code1 graphic_intensive artist animator vector industry2
+235,work code1 graphic_intensive artist animator
+236,work code1 data_intensive scientist research graphic_design industry1
+237,work code1 data_intensive scientist research graphic_design
+238,work code1 data_intensive scientist research industry1
+239,work code1 data_intensive scientist research graphic_design
+240,code1 data_intensive scientist research work industry1
+241,work code1 data_intensive scientist industry1 industry2 research
+242,work code1 data_intensive scientist industry1 industry2
+243,work code1 data_intensive scientist industry1 game_engine industry2
+244,work code1 data_intensive scientist industry1 game_engine
+245,work code1 data_intensive scientist industry1 research industry3
+246,work code1 data_intensive engineer school
+247,work code1 data_intensive engineer school industry2
+248,work code1 data_intensive engineer school research
+249,work code1 data_intensive engineer school research industry2
+250,work code1 data_intensive engineer school vector
+251,work code1 data_intensive engineer industry2
+252,work code1 data_intensive engineer industry2 school
+253,code1 data_intensive engineer industry2 work
+254,work code1 data_intensive engineer industry2
+255,work code1 data_intensive engineer industry2 industry1 animator school
+256,work admin advance_usage comm high_end_user
+257,work admin advance_usage comm high_end_user
+258,work admin advance_usage comm high_end_user operator pictures student low_end_user
+259,work admin advance_usage comm high_end_user
+260,work admin advance_usage comm high_end_user low_end_user
+261,work admin advance_usage comm high_end_user low_end_user
+262,work admin advance_usage comm low_end_user high_end_user
+263,work admin advance_usage comm low_end_user
+264,work admin advance_usage comm low_end_user
+265,admin advance_usage comm low_end_user work
+266,work comm low_end_user admin advance_usage industry3 high_end_user
+267,work admin advance_usage data operator system_admin
+268,work admin advance_usage data operator vector
+269,work admin advance_usage data operator system_admin
+270,work admin advance_usage data operator
+271,work admin advance_usage data operator system_admin
+272,work admin advance_usage data system_admin operator
+273,work admin advance_usage data system_admin operator
+274,work advance_usage data system_admin admin
+275,work admin advance_usage data system_admin low_end_user
+276,work admin advance_usage data system_admin operator
+277,work admin advance_usage data system_admin operator low_end_user
+278,work admin simple_usage word_processing student industry3
+279,work simple_usage word_processing student admin industry3
+280,work admin simple_usage word_processing student industry3
+281,work admin simple_usage word_processing student industry3
+282,work admin simple_usage word_processing student high_end_user industry3
+283,work admin simple_usage word_processing industry3
+284,work admin simple_usage word_processing industry3 low_end_user large_business
+285,work admin simple_usage word_processing industry3 student large_business
+286,work simple_usage word_processing industry3 admin student
+287,work admin simple_usage word_processing industry3 student
+288,work admin simple_usage pos small_business
+289,work admin simple_usage pos small_business
+290,work admin simple_usage pos small_business student large_business code2
+291,work admin pos small_business simple_usage large_business student
+292,work admin simple_usage pos small_business student
+293,work admin simple_usage pos small_business large_business
+294,work admin simple_usage pos large_business small_business industry3
+295,work admin simple_usage pos large_business industry3
+296,work admin simple_usage large_business pos small_business system_admin
+297,work admin simple_usage pos large_business
+298,work admin simple_usage pos large_business
+299,casual gaming hardcore repetitive strategic
+300,casual gaming hardcore repetitive strategic
+301,casual gaming hardcore repetitive
+302,casual gaming hardcore repetitive strategic
+303,casual gaming hardcore repetitive strategic media
+304,casual gaming hardcore repetitive media
+305,casual gaming hardcore strategic repetitive
+306,casual gaming hardcore strategic
+307,casual gaming hardcore strategic repetitive
+308,casual gaming hardcore strategic
+309,casual gaming hardcore strategic casino_games
+310,casual gaming softcore real_time
+311,casual gaming softcore real_time repetitive scientist
+312,casual gaming softcore real_time
+313,gaming softcore real_time repetitive casual
+314,casual gaming softcore real_time casino_games
+315,casual gaming softcore casino_games real_time strategic
+316,casual gaming softcore casino_games
+317,casual gaming softcore casino_games
+318,casual gaming softcore casino_games real_time
+319,casual gaming softcore casino_games
+320,casual applications browsing media pictures online_gaming
+321,casual applications browsing media pictures
+322,casual applications browsing media pictures online_gaming high_end_user video long_form
+323,casual applications browsing media pictures video
+324,casual applications browsing media pictures
+325,casual applications browsing media pictures long_form
+326,casual applications browsing media video
+327,casual applications browsing media video short_form pictures
+328,casual applications browsing media video
+329,casual applications browsing media video social pictures
+330,casual applications browsing video media pictures
+331,casual applications browsing media video pictures social
+332,casual browsing website online_gaming applications pictures
+333,casual applications browsing website online_gaming social code2
+334,casual applications browsing website online_gaming social pictures
+335,casual applications browsing website online_gaming pictures social
+336,casual applications browsing online_gaming website operator
+337,casual applications browsing website social
+338,casual applications browsing website social
+339,casual applications browsing website social online_gaming video
+340,casual applications browsing website social video
+341,casual applications browsing website social online_gaming
+342,applications browsing website social casual
