@@ -17,7 +17,7 @@ for pid in range(343):
 	avg_scores[pid] = driver.getScoreOfProduct(pid)
 
 # Extract the products from products.txt and encode their technical attributes in binary form
-with open('products.txt') as infile:
+with open('products2.txt') as infile:
 	for line in infile:
 		extractedValues = line.split()
 		pid = int(extractedValues[0])
