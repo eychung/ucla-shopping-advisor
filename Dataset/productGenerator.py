@@ -1,10 +1,10 @@
 from random import randint
 
 # Product attribute list
-global pal = ["DiscreteGPU", "LargeHDD", "IntegratedWebCam", "IntegratedMic", "HighDPI", "HighBattery", "Rugged", "BackLitKeyboard", "LightWeight", "HighRAM", "SDCard", "OpticalDrive"]
+pal = ["DiscreteGPU", "LargeHDD", "IntegratedWebCam", "IntegratedMic", "HighDPI", "HighBattery", "Rugged", "BackLitKeyboard", "LightWeight", "HighRAM", "SDCard", "OpticalDrive"]
 
 # the ones that we came up with for the leaf nodes (24 base cases)
-global baseProductSet = { 0 : pal[0] + " " + pal[1] + " " + pal[4] + " " + pal[7] + " " + pal[9],
+baseProductSet = { 0 : pal[0] + " " + pal[1] + " " + pal[4] + " " + pal[7] + " " + pal[9],
 1 : pal[0] + " " + pal[1] + " " + pal[4] + " " + pal[7] + " " + pal[9] + " " + pal[11],
 2 : pal[0] + " " + pal[1] + " " + pal[4] + " " + pal[9] + " " + pal[10],
 3 : pal[0] + " " + pal[1] + " " + pal[2] + " " + pal[4] + " " + pal[9],
