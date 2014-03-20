@@ -22,322 +22,322 @@
 21,21,IntegratedMic HighDPI HighBattery Rugged BackLitKeyboard LightWeight
 22,22,IntegratedMic HighDPI HighBattery Rugged LightWeight
 23,23,HighBattery BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive
-24,0,LargeHDD HighDPI BackLitKeyboard HighRAM HighBattery
+24,0,LargeHDD HighDPI BackLitKeyboard HighRAM IntegratedMic
 25,0,LargeHDD HighDPI BackLitKeyboard HighRAM Rugged
-26,0,LargeHDD HighDPI BackLitKeyboard HighRAM LightWeight
-27,0,LargeHDD HighDPI BackLitKeyboard HighRAM IntegratedWebCam
-28,0,LargeHDD HighDPI BackLitKeyboard HighRAM IntegratedMic
-29,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive IntegratedWebCam
+26,0,LargeHDD HighDPI BackLitKeyboard HighRAM IntegratedWebCam
+27,0,LargeHDD HighDPI BackLitKeyboard HighRAM SDCard
+28,0,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive
+29,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive HighBattery
 30,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive IntegratedMic
-31,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive HighBattery
-32,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive LightWeight
-33,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive Rugged
+31,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive IntegratedWebCam
+32,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive Rugged
+33,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive LightWeight
 34,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive SDCard
-35,2,LargeHDD HighDPI HighRAM SDCard IntegratedMic
-36,2,LargeHDD HighDPI HighRAM SDCard BackLitKeyboard
-37,2,LargeHDD HighDPI HighRAM SDCard OpticalDrive
-38,2,LargeHDD HighDPI HighRAM SDCard HighBattery
-39,2,LargeHDD HighDPI HighRAM SDCard IntegratedWebCam
-40,3,LargeHDD IntegratedWebCam HighDPI HighRAM HighBattery
-41,3,LargeHDD IntegratedWebCam HighDPI HighRAM SDCard
-42,3,LargeHDD IntegratedWebCam HighDPI HighRAM LightWeight
-43,3,LargeHDD IntegratedWebCam HighDPI HighRAM OpticalDrive
-44,3,LargeHDD IntegratedWebCam HighDPI HighRAM Rugged
-45,4,IntegratedWebCam HighBattery HighRAM OpticalDrive DiscreteGPU
-46,4,IntegratedWebCam HighBattery HighRAM OpticalDrive LightWeight
-47,4,IntegratedWebCam HighBattery HighRAM OpticalDrive IntegratedMic
-48,4,IntegratedWebCam HighBattery HighRAM OpticalDrive HighDPI
-49,4,IntegratedWebCam HighBattery HighRAM OpticalDrive Rugged
-50,5,HighBattery Rugged HighRAM OpticalDrive HighDPI
-51,5,HighBattery Rugged HighRAM OpticalDrive BackLitKeyboard
+35,2,LargeHDD HighDPI HighRAM SDCard Rugged
+36,2,LargeHDD HighDPI HighRAM SDCard IntegratedMic
+37,2,LargeHDD HighDPI HighRAM SDCard HighBattery
+38,2,LargeHDD HighDPI HighRAM SDCard LightWeight
+39,2,LargeHDD HighDPI HighRAM SDCard OpticalDrive
+40,3,LargeHDD IntegratedWebCam HighDPI HighRAM IntegratedMic
+41,3,LargeHDD IntegratedWebCam HighDPI HighRAM OpticalDrive
+42,3,LargeHDD IntegratedWebCam HighDPI HighRAM HighBattery
+43,3,LargeHDD IntegratedWebCam HighDPI HighRAM BackLitKeyboard
+44,3,LargeHDD IntegratedWebCam HighDPI HighRAM LightWeight
+45,4,IntegratedWebCam HighBattery HighRAM OpticalDrive BackLitKeyboard
+46,4,IntegratedWebCam HighBattery HighRAM OpticalDrive DiscreteGPU
+47,4,IntegratedWebCam HighBattery HighRAM OpticalDrive HighDPI
+48,4,IntegratedWebCam HighBattery HighRAM OpticalDrive Rugged
+49,4,IntegratedWebCam HighBattery HighRAM OpticalDrive SDCard
+50,5,HighBattery Rugged HighRAM OpticalDrive DiscreteGPU
+51,5,HighBattery Rugged HighRAM OpticalDrive LightWeight
 52,5,HighBattery Rugged HighRAM OpticalDrive SDCard
 53,5,HighBattery Rugged HighRAM OpticalDrive IntegratedWebCam
-54,5,HighBattery Rugged HighRAM OpticalDrive LightWeight
-55,6,IntegratedWebCam IntegratedMic HighBattery HighRAM HighDPI
+54,5,HighBattery Rugged HighRAM OpticalDrive HighDPI
+55,6,IntegratedWebCam IntegratedMic HighBattery HighRAM Rugged
 56,6,IntegratedWebCam IntegratedMic HighBattery HighRAM BackLitKeyboard
-57,6,IntegratedWebCam IntegratedMic HighBattery HighRAM OpticalDrive
-58,6,IntegratedWebCam IntegratedMic HighBattery HighRAM DiscreteGPU
-59,6,IntegratedWebCam IntegratedMic HighBattery HighRAM SDCard
-60,7,IntegratedWebCam IntegratedMic Rugged HighRAM OpticalDrive
-61,7,IntegratedWebCam IntegratedMic Rugged HighRAM SDCard
-62,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighDPI
-63,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighBattery
-64,7,IntegratedWebCam IntegratedMic Rugged HighRAM DiscreteGPU
-65,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive Rugged
-66,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighRAM
-67,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighDPI
-68,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive SDCard
-69,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive LargeHDD
+57,6,IntegratedWebCam IntegratedMic HighBattery HighRAM SDCard
+58,6,IntegratedWebCam IntegratedMic HighBattery HighRAM LightWeight
+59,6,IntegratedWebCam IntegratedMic HighBattery HighRAM HighDPI
+60,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighBattery
+61,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighDPI
+62,7,IntegratedWebCam IntegratedMic Rugged HighRAM SDCard
+63,7,IntegratedWebCam IntegratedMic Rugged HighRAM BackLitKeyboard
+64,7,IntegratedWebCam IntegratedMic Rugged HighRAM OpticalDrive
+65,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive LargeHDD
+66,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighDPI
+67,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive SDCard
+68,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive Rugged
+69,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighRAM
 70,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive DiscreteGPU
-71,9,IntegratedMic HighBattery BackLitKeyboard LightWeight Rugged
+71,9,IntegratedMic HighBattery BackLitKeyboard LightWeight LargeHDD
 72,9,IntegratedMic HighBattery BackLitKeyboard LightWeight DiscreteGPU
-73,9,IntegratedMic HighBattery BackLitKeyboard LightWeight HighRAM
-74,9,IntegratedMic HighBattery BackLitKeyboard LightWeight LargeHDD
-75,9,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive
+73,9,IntegratedMic HighBattery BackLitKeyboard LightWeight HighDPI
+74,9,IntegratedMic HighBattery BackLitKeyboard LightWeight SDCard
+75,9,IntegratedMic HighBattery BackLitKeyboard LightWeight Rugged
 76,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive HighDPI
-77,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive IntegratedWebCam
-78,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive DiscreteGPU
-79,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive Rugged
+77,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive Rugged
+78,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive SDCard
+79,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive DiscreteGPU
 80,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive LightWeight
-81,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM DiscreteGPU
-82,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM LightWeight
-83,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM SDCard
+81,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM SDCard
+82,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM DiscreteGPU
+83,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM LightWeight
 84,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM HighBattery
 85,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM HighDPI
 86,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM OpticalDrive
 87,12,IntegratedMic HighBattery Rugged BackLitKeyboard DiscreteGPU
-88,12,IntegratedMic HighBattery Rugged BackLitKeyboard HighDPI
-89,12,IntegratedMic HighBattery Rugged BackLitKeyboard OpticalDrive
-90,12,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM
-91,12,IntegratedMic HighBattery Rugged BackLitKeyboard LargeHDD
-92,13,IntegratedMic HighBattery Rugged HighRAM BackLitKeyboard
-93,13,IntegratedMic HighBattery Rugged HighRAM DiscreteGPU
-94,13,IntegratedMic HighBattery Rugged HighRAM LargeHDD
-95,13,IntegratedMic HighBattery Rugged HighRAM LightWeight
-96,13,IntegratedMic HighBattery Rugged HighRAM OpticalDrive
-97,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM SDCard
-98,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM OpticalDrive
-99,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM HighDPI
-100,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM DiscreteGPU
-101,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM LightWeight
-102,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM LargeHDD
-103,15,LargeHDD HighDPI Rugged BackLitKeyboard OpticalDrive
-104,15,LargeHDD HighDPI Rugged BackLitKeyboard IntegratedMic
-105,15,LargeHDD HighDPI Rugged BackLitKeyboard HighBattery
-106,15,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM
-107,15,LargeHDD HighDPI Rugged BackLitKeyboard LightWeight
+88,12,IntegratedMic HighBattery Rugged BackLitKeyboard SDCard
+89,12,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM
+90,12,IntegratedMic HighBattery Rugged BackLitKeyboard LightWeight
+91,12,IntegratedMic HighBattery Rugged BackLitKeyboard HighDPI
+92,13,IntegratedMic HighBattery Rugged HighRAM LightWeight
+93,13,IntegratedMic HighBattery Rugged HighRAM HighDPI
+94,13,IntegratedMic HighBattery Rugged HighRAM BackLitKeyboard
+95,13,IntegratedMic HighBattery Rugged HighRAM SDCard
+96,13,IntegratedMic HighBattery Rugged HighRAM DiscreteGPU
+97,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM OpticalDrive
+98,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM DiscreteGPU
+99,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM SDCard
+100,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM LightWeight
+101,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM LargeHDD
+102,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM HighDPI
+103,15,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM
+104,15,LargeHDD HighDPI Rugged BackLitKeyboard IntegratedWebCam
+105,15,LargeHDD HighDPI Rugged BackLitKeyboard LightWeight
+106,15,LargeHDD HighDPI Rugged BackLitKeyboard SDCard
+107,15,LargeHDD HighDPI Rugged BackLitKeyboard OpticalDrive
 108,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM IntegratedWebCam
-109,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM OpticalDrive
-110,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM HighBattery
-111,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM SDCard
-112,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM LightWeight
-113,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM IntegratedMic
-114,17,IntegratedMic HighBattery LightWeight OpticalDrive DiscreteGPU
-115,17,IntegratedMic HighBattery LightWeight OpticalDrive HighRAM
-116,17,IntegratedMic HighBattery LightWeight OpticalDrive HighDPI
-117,17,IntegratedMic HighBattery LightWeight OpticalDrive BackLitKeyboard
-118,17,IntegratedMic HighBattery LightWeight OpticalDrive LargeHDD
-119,18,IntegratedMic HighBattery Rugged LightWeight DiscreteGPU
+109,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM IntegratedMic
+110,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM SDCard
+111,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM HighBattery
+112,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM OpticalDrive
+113,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM LightWeight
+114,17,IntegratedMic HighBattery LightWeight OpticalDrive HighRAM
+115,17,IntegratedMic HighBattery LightWeight OpticalDrive DiscreteGPU
+116,17,IntegratedMic HighBattery LightWeight OpticalDrive LargeHDD
+117,17,IntegratedMic HighBattery LightWeight OpticalDrive HighDPI
+118,17,IntegratedMic HighBattery LightWeight OpticalDrive Rugged
+119,18,IntegratedMic HighBattery Rugged LightWeight SDCard
 120,18,IntegratedMic HighBattery Rugged LightWeight HighRAM
 121,18,IntegratedMic HighBattery Rugged LightWeight LargeHDD
 122,18,IntegratedMic HighBattery Rugged LightWeight OpticalDrive
-123,18,IntegratedMic HighBattery Rugged LightWeight SDCard
-124,19,IntegratedWebCam HighBattery HighRAM SDCard IntegratedMic
-125,19,IntegratedWebCam HighBattery HighRAM SDCard Rugged
-126,19,IntegratedWebCam HighBattery HighRAM SDCard DiscreteGPU
+123,18,IntegratedMic HighBattery Rugged LightWeight DiscreteGPU
+124,19,IntegratedWebCam HighBattery HighRAM SDCard DiscreteGPU
+125,19,IntegratedWebCam HighBattery HighRAM SDCard IntegratedMic
+126,19,IntegratedWebCam HighBattery HighRAM SDCard Rugged
 127,19,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive
-128,19,IntegratedWebCam HighBattery HighRAM SDCard BackLitKeyboard
+128,19,IntegratedWebCam HighBattery HighRAM SDCard LightWeight
 129,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive BackLitKeyboard
-130,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive DiscreteGPU
-131,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive Rugged
-132,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive HighDPI
-133,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive IntegratedMic
+130,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive Rugged
+131,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive HighDPI
+132,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive IntegratedMic
+133,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive DiscreteGPU
 134,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive LightWeight
-135,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight IntegratedWebCam
-136,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight DiscreteGPU
-137,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight SDCard
+135,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight SDCard
+136,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight OpticalDrive
+137,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight HighRAM
 138,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight LargeHDD
-139,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight HighRAM
-140,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight OpticalDrive
-141,22,HighDPI HighBattery Rugged LightWeight OpticalDrive
-142,22,HighDPI HighBattery Rugged LightWeight SDCard
-143,22,HighDPI HighBattery Rugged LightWeight LargeHDD
-144,22,HighDPI HighBattery Rugged LightWeight DiscreteGPU
-145,22,HighDPI HighBattery Rugged LightWeight BackLitKeyboard
-146,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive IntegratedWebCam
-147,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive Rugged
-148,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive IntegratedMic
+139,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight DiscreteGPU
+140,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight IntegratedWebCam
+141,22,HighDPI HighBattery Rugged LightWeight LargeHDD
+142,22,HighDPI HighBattery Rugged LightWeight BackLitKeyboard
+143,22,HighDPI HighBattery Rugged LightWeight SDCard
+144,22,HighDPI HighBattery Rugged LightWeight OpticalDrive
+145,22,HighDPI HighBattery Rugged LightWeight IntegratedWebCam
+146,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive IntegratedMic
+147,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive HighDPI
+148,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive LargeHDD
 149,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive DiscreteGPU
-150,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive LargeHDD
-151,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive HighDPI
-152,0,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive
-153,0,LargeHDD HighDPI BackLitKeyboard HighRAM Rugged
-154,0,LargeHDD HighDPI BackLitKeyboard HighRAM IntegratedMic
-155,0,LargeHDD HighDPI BackLitKeyboard HighRAM LightWeight
-156,0,LargeHDD HighDPI BackLitKeyboard HighRAM HighBattery
-157,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive HighBattery
-158,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive IntegratedMic
-159,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive SDCard
-160,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive Rugged
+150,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive IntegratedWebCam
+151,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive Rugged
+152,0,LargeHDD HighDPI BackLitKeyboard HighRAM LightWeight
+153,0,LargeHDD HighDPI BackLitKeyboard HighRAM HighBattery
+154,0,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive
+155,0,LargeHDD HighDPI BackLitKeyboard HighRAM Rugged
+156,0,LargeHDD HighDPI BackLitKeyboard HighRAM IntegratedWebCam
+157,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive SDCard
+158,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive LightWeight
+159,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive HighBattery
+160,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive IntegratedMic
 161,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive IntegratedWebCam
-162,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive LightWeight
-163,2,LargeHDD HighDPI HighRAM SDCard BackLitKeyboard
-164,2,LargeHDD HighDPI HighRAM SDCard HighBattery
-165,2,LargeHDD HighDPI HighRAM SDCard LightWeight
-166,2,LargeHDD HighDPI HighRAM SDCard IntegratedWebCam
-167,2,LargeHDD HighDPI HighRAM SDCard IntegratedMic
-168,3,LargeHDD IntegratedWebCam HighDPI HighRAM SDCard
-169,3,LargeHDD IntegratedWebCam HighDPI HighRAM Rugged
-170,3,LargeHDD IntegratedWebCam HighDPI HighRAM OpticalDrive
-171,3,LargeHDD IntegratedWebCam HighDPI HighRAM LightWeight
-172,3,LargeHDD IntegratedWebCam HighDPI HighRAM IntegratedMic
-173,4,IntegratedWebCam HighBattery HighRAM OpticalDrive SDCard
-174,4,IntegratedWebCam HighBattery HighRAM OpticalDrive LightWeight
-175,4,IntegratedWebCam HighBattery HighRAM OpticalDrive Rugged
-176,4,IntegratedWebCam HighBattery HighRAM OpticalDrive HighDPI
-177,4,IntegratedWebCam HighBattery HighRAM OpticalDrive IntegratedMic
-178,5,HighBattery Rugged HighRAM OpticalDrive DiscreteGPU
-179,5,HighBattery Rugged HighRAM OpticalDrive SDCard
-180,5,HighBattery Rugged HighRAM OpticalDrive IntegratedMic
-181,5,HighBattery Rugged HighRAM OpticalDrive IntegratedWebCam
-182,5,HighBattery Rugged HighRAM OpticalDrive HighDPI
-183,6,IntegratedWebCam IntegratedMic HighBattery HighRAM Rugged
-184,6,IntegratedWebCam IntegratedMic HighBattery HighRAM HighDPI
-185,6,IntegratedWebCam IntegratedMic HighBattery HighRAM SDCard
-186,6,IntegratedWebCam IntegratedMic HighBattery HighRAM DiscreteGPU
+162,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive Rugged
+163,2,LargeHDD HighDPI HighRAM SDCard OpticalDrive
+164,2,LargeHDD HighDPI HighRAM SDCard IntegratedMic
+165,2,LargeHDD HighDPI HighRAM SDCard Rugged
+166,2,LargeHDD HighDPI HighRAM SDCard BackLitKeyboard
+167,2,LargeHDD HighDPI HighRAM SDCard HighBattery
+168,3,LargeHDD IntegratedWebCam HighDPI HighRAM IntegratedMic
+169,3,LargeHDD IntegratedWebCam HighDPI HighRAM HighBattery
+170,3,LargeHDD IntegratedWebCam HighDPI HighRAM BackLitKeyboard
+171,3,LargeHDD IntegratedWebCam HighDPI HighRAM OpticalDrive
+172,3,LargeHDD IntegratedWebCam HighDPI HighRAM LightWeight
+173,4,IntegratedWebCam HighBattery HighRAM OpticalDrive DiscreteGPU
+174,4,IntegratedWebCam HighBattery HighRAM OpticalDrive Rugged
+175,4,IntegratedWebCam HighBattery HighRAM OpticalDrive IntegratedMic
+176,4,IntegratedWebCam HighBattery HighRAM OpticalDrive SDCard
+177,4,IntegratedWebCam HighBattery HighRAM OpticalDrive HighDPI
+178,5,HighBattery Rugged HighRAM OpticalDrive IntegratedMic
+179,5,HighBattery Rugged HighRAM OpticalDrive IntegratedWebCam
+180,5,HighBattery Rugged HighRAM OpticalDrive HighDPI
+181,5,HighBattery Rugged HighRAM OpticalDrive SDCard
+182,5,HighBattery Rugged HighRAM OpticalDrive LightWeight
+183,6,IntegratedWebCam IntegratedMic HighBattery HighRAM SDCard
+184,6,IntegratedWebCam IntegratedMic HighBattery HighRAM Rugged
+185,6,IntegratedWebCam IntegratedMic HighBattery HighRAM LightWeight
+186,6,IntegratedWebCam IntegratedMic HighBattery HighRAM BackLitKeyboard
 187,6,IntegratedWebCam IntegratedMic HighBattery HighRAM OpticalDrive
-188,7,IntegratedWebCam IntegratedMic Rugged HighRAM DiscreteGPU
-189,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighDPI
-190,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighBattery
-191,7,IntegratedWebCam IntegratedMic Rugged HighRAM OpticalDrive
-192,7,IntegratedWebCam IntegratedMic Rugged HighRAM LightWeight
-193,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive DiscreteGPU
-194,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive LargeHDD
-195,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighDPI
-196,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive SDCard
-197,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighRAM
-198,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive Rugged
-199,9,IntegratedMic HighBattery BackLitKeyboard LightWeight SDCard
-200,9,IntegratedMic HighBattery BackLitKeyboard LightWeight Rugged
-201,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive HighBattery
+188,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighBattery
+189,7,IntegratedWebCam IntegratedMic Rugged HighRAM DiscreteGPU
+190,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighDPI
+191,7,IntegratedWebCam IntegratedMic Rugged HighRAM LightWeight
+192,7,IntegratedWebCam IntegratedMic Rugged HighRAM BackLitKeyboard
+193,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive Rugged
+194,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive SDCard
+195,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive LargeHDD
+196,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighRAM
+197,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighDPI
+198,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive DiscreteGPU
+199,9,IntegratedMic HighBattery BackLitKeyboard LightWeight DiscreteGPU
+200,9,IntegratedMic HighBattery BackLitKeyboard LightWeight HighRAM
+201,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive IntegratedWebCam
 202,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM LightWeight
-203,12,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM
-204,13,IntegratedMic HighBattery Rugged HighRAM LightWeight
+203,12,IntegratedMic HighBattery Rugged BackLitKeyboard LargeHDD
+204,13,IntegratedMic HighBattery Rugged HighRAM SDCard
 205,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM OpticalDrive
-206,15,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM
-207,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM IntegratedMic
-208,17,IntegratedMic HighBattery LightWeight OpticalDrive BackLitKeyboard
-209,18,IntegratedMic HighBattery Rugged LightWeight SDCard
-210,19,IntegratedWebCam HighBattery HighRAM SDCard Rugged
+206,15,LargeHDD HighDPI Rugged BackLitKeyboard IntegratedMic
+207,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM IntegratedWebCam
+208,17,IntegratedMic HighBattery LightWeight OpticalDrive DiscreteGPU
+209,18,IntegratedMic HighBattery Rugged LightWeight DiscreteGPU
+210,19,IntegratedWebCam HighBattery HighRAM SDCard DiscreteGPU
 211,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive IntegratedMic
-212,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight OpticalDrive
-213,22,HighDPI HighBattery Rugged LightWeight DiscreteGPU
-214,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive LargeHDD
-215,0,LargeHDD HighDPI BackLitKeyboard HighRAM HighBattery OpticalDrive
-216,0,LargeHDD HighDPI BackLitKeyboard HighRAM Rugged IntegratedWebCam
-217,0,LargeHDD HighDPI BackLitKeyboard HighRAM LightWeight Rugged
-218,0,LargeHDD HighDPI BackLitKeyboard HighRAM IntegratedWebCam LargeHDD
-219,0,LargeHDD HighDPI BackLitKeyboard HighRAM IntegratedMic OpticalDrive
-220,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive IntegratedWebCam SDCard
+212,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight IntegratedWebCam
+213,22,HighDPI HighBattery Rugged LightWeight SDCard
+214,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive IntegratedMic
+215,0,LargeHDD HighDPI BackLitKeyboard HighRAM IntegratedMic HighBattery
+216,0,LargeHDD HighDPI BackLitKeyboard HighRAM Rugged IntegratedMic
+217,0,LargeHDD HighDPI BackLitKeyboard HighRAM IntegratedWebCam HighBattery
+218,0,LargeHDD HighDPI BackLitKeyboard HighRAM SDCard IntegratedMic
+219,0,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive Rugged
+220,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive HighBattery Rugged
 221,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive IntegratedMic Rugged
-222,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive HighBattery LargeHDD
-223,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive LightWeight DiscreteGPU
-224,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive Rugged HighBattery
-225,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive SDCard HighBattery
-226,2,LargeHDD HighDPI HighRAM SDCard IntegratedMic HighBattery
-227,2,LargeHDD HighDPI HighRAM SDCard BackLitKeyboard LightWeight
-228,2,LargeHDD HighDPI HighRAM SDCard OpticalDrive IntegratedMic
-229,2,LargeHDD HighDPI HighRAM SDCard HighBattery OpticalDrive
-230,2,LargeHDD HighDPI HighRAM SDCard IntegratedWebCam BackLitKeyboard
-231,3,LargeHDD IntegratedWebCam HighDPI HighRAM HighBattery LightWeight
-232,3,LargeHDD IntegratedWebCam HighDPI HighRAM SDCard BackLitKeyboard
-233,3,LargeHDD IntegratedWebCam HighDPI HighRAM LightWeight OpticalDrive
-234,3,LargeHDD IntegratedWebCam HighDPI HighRAM OpticalDrive IntegratedMic
-235,3,LargeHDD IntegratedWebCam HighDPI HighRAM Rugged HighBattery
-236,4,IntegratedWebCam HighBattery HighRAM OpticalDrive DiscreteGPU HighDPI
-237,4,IntegratedWebCam HighBattery HighRAM OpticalDrive LightWeight HighDPI
-238,4,IntegratedWebCam HighBattery HighRAM OpticalDrive IntegratedMic LargeHDD
-239,4,IntegratedWebCam HighBattery HighRAM OpticalDrive HighDPI LightWeight
-240,4,IntegratedWebCam HighBattery HighRAM OpticalDrive Rugged IntegratedWebCam
-241,5,HighBattery Rugged HighRAM OpticalDrive HighDPI LightWeight
-242,5,HighBattery Rugged HighRAM OpticalDrive BackLitKeyboard LargeHDD
+222,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive IntegratedWebCam DiscreteGPU
+223,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive Rugged IntegratedMic
+224,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive LightWeight IntegratedMic
+225,1,LargeHDD HighDPI BackLitKeyboard HighRAM OpticalDrive SDCard Rugged
+226,2,LargeHDD HighDPI HighRAM SDCard Rugged IntegratedMic
+227,2,LargeHDD HighDPI HighRAM SDCard IntegratedMic DiscreteGPU
+228,2,LargeHDD HighDPI HighRAM SDCard HighBattery DiscreteGPU
+229,2,LargeHDD HighDPI HighRAM SDCard LightWeight HighBattery
+230,2,LargeHDD HighDPI HighRAM SDCard OpticalDrive HighBattery
+231,3,LargeHDD IntegratedWebCam HighDPI HighRAM IntegratedMic LightWeight
+232,3,LargeHDD IntegratedWebCam HighDPI HighRAM OpticalDrive SDCard
+233,3,LargeHDD IntegratedWebCam HighDPI HighRAM HighBattery DiscreteGPU
+234,3,LargeHDD IntegratedWebCam HighDPI HighRAM BackLitKeyboard SDCard
+235,3,LargeHDD IntegratedWebCam HighDPI HighRAM LightWeight IntegratedMic
+236,4,IntegratedWebCam HighBattery HighRAM OpticalDrive BackLitKeyboard IntegratedWebCam
+237,4,IntegratedWebCam HighBattery HighRAM OpticalDrive DiscreteGPU HighDPI
+238,4,IntegratedWebCam HighBattery HighRAM OpticalDrive HighDPI IntegratedWebCam
+239,4,IntegratedWebCam HighBattery HighRAM OpticalDrive Rugged IntegratedMic
+240,4,IntegratedWebCam HighBattery HighRAM OpticalDrive SDCard Rugged
+241,5,HighBattery Rugged HighRAM OpticalDrive DiscreteGPU HighDPI
+242,5,HighBattery Rugged HighRAM OpticalDrive LightWeight LargeHDD
 243,5,HighBattery Rugged HighRAM OpticalDrive SDCard HighDPI
-244,5,HighBattery Rugged HighRAM OpticalDrive IntegratedWebCam LargeHDD
-245,5,HighBattery Rugged HighRAM OpticalDrive LightWeight SDCard
-246,6,IntegratedWebCam IntegratedMic HighBattery HighRAM HighDPI BackLitKeyboard
-247,6,IntegratedWebCam IntegratedMic HighBattery HighRAM BackLitKeyboard DiscreteGPU
-248,6,IntegratedWebCam IntegratedMic HighBattery HighRAM OpticalDrive Rugged
-249,6,IntegratedWebCam IntegratedMic HighBattery HighRAM DiscreteGPU LargeHDD
-250,6,IntegratedWebCam IntegratedMic HighBattery HighRAM SDCard LargeHDD
-251,7,IntegratedWebCam IntegratedMic Rugged HighRAM OpticalDrive HighBattery
-252,7,IntegratedWebCam IntegratedMic Rugged HighRAM SDCard LightWeight
-253,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighDPI IntegratedWebCam
-254,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighBattery HighDPI
-255,7,IntegratedWebCam IntegratedMic Rugged HighRAM DiscreteGPU HighBattery
-256,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive Rugged IntegratedMic
-257,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighRAM LargeHDD
-258,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighDPI HighRAM
-259,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive SDCard IntegratedWebCam
-260,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive LargeHDD IntegratedMic
-261,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive DiscreteGPU HighRAM
-262,9,IntegratedMic HighBattery BackLitKeyboard LightWeight Rugged HighRAM
-263,9,IntegratedMic HighBattery BackLitKeyboard LightWeight DiscreteGPU IntegratedWebCam
-264,9,IntegratedMic HighBattery BackLitKeyboard LightWeight HighRAM IntegratedMic
-265,9,IntegratedMic HighBattery BackLitKeyboard LightWeight LargeHDD IntegratedMic
-266,9,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive DiscreteGPU
-267,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive HighDPI DiscreteGPU
-268,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive IntegratedWebCam LargeHDD
-269,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive DiscreteGPU HighDPI
-270,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive Rugged IntegratedMic
-271,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive LightWeight HighDPI
-272,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM DiscreteGPU IntegratedWebCam
-273,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM LightWeight OpticalDrive
-274,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM SDCard DiscreteGPU
-275,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM HighBattery LargeHDD
+244,5,HighBattery Rugged HighRAM OpticalDrive IntegratedWebCam SDCard
+245,5,HighBattery Rugged HighRAM OpticalDrive HighDPI DiscreteGPU
+246,6,IntegratedWebCam IntegratedMic HighBattery HighRAM Rugged LightWeight
+247,6,IntegratedWebCam IntegratedMic HighBattery HighRAM BackLitKeyboard SDCard
+248,6,IntegratedWebCam IntegratedMic HighBattery HighRAM SDCard OpticalDrive
+249,6,IntegratedWebCam IntegratedMic HighBattery HighRAM LightWeight LargeHDD
+250,6,IntegratedWebCam IntegratedMic HighBattery HighRAM HighDPI OpticalDrive
+251,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighBattery DiscreteGPU
+252,7,IntegratedWebCam IntegratedMic Rugged HighRAM HighDPI IntegratedWebCam
+253,7,IntegratedWebCam IntegratedMic Rugged HighRAM SDCard DiscreteGPU
+254,7,IntegratedWebCam IntegratedMic Rugged HighRAM BackLitKeyboard HighBattery
+255,7,IntegratedWebCam IntegratedMic Rugged HighRAM OpticalDrive DiscreteGPU
+256,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive LargeHDD DiscreteGPU
+257,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighDPI HighRAM
+258,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive SDCard Rugged
+259,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive Rugged IntegratedMic
+260,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive HighRAM IntegratedWebCam
+261,8,IntegratedMic HighBattery BackLitKeyboard LightWeight OpticalDrive DiscreteGPU LargeHDD
+262,9,IntegratedMic HighBattery BackLitKeyboard LightWeight LargeHDD HighDPI
+263,9,IntegratedMic HighBattery BackLitKeyboard LightWeight DiscreteGPU SDCard
+264,9,IntegratedMic HighBattery BackLitKeyboard LightWeight HighDPI DiscreteGPU
+265,9,IntegratedMic HighBattery BackLitKeyboard LightWeight SDCard IntegratedMic
+266,9,IntegratedMic HighBattery BackLitKeyboard LightWeight Rugged IntegratedWebCam
+267,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive HighDPI LightWeight
+268,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive Rugged DiscreteGPU
+269,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive SDCard LargeHDD
+270,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive DiscreteGPU SDCard
+271,10,IntegratedMic BackLitKeyboard HighRAM OpticalDrive LightWeight LargeHDD
+272,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM SDCard HighBattery
+273,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM DiscreteGPU HighBattery
+274,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM LightWeight SDCard
+275,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM HighBattery OpticalDrive
 276,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM HighDPI SDCard
-277,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM OpticalDrive LargeHDD
-278,12,IntegratedMic HighBattery Rugged BackLitKeyboard DiscreteGPU LargeHDD
-279,12,IntegratedMic HighBattery Rugged BackLitKeyboard HighDPI OpticalDrive
-280,12,IntegratedMic HighBattery Rugged BackLitKeyboard OpticalDrive IntegratedMic
-281,12,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM IntegratedMic
-282,12,IntegratedMic HighBattery Rugged BackLitKeyboard LargeHDD SDCard
-283,13,IntegratedMic HighBattery Rugged HighRAM BackLitKeyboard LargeHDD
-284,13,IntegratedMic HighBattery Rugged HighRAM DiscreteGPU IntegratedMic
-285,13,IntegratedMic HighBattery Rugged HighRAM LargeHDD SDCard
-286,13,IntegratedMic HighBattery Rugged HighRAM LightWeight SDCard
-287,13,IntegratedMic HighBattery Rugged HighRAM OpticalDrive LightWeight
-288,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM SDCard IntegratedWebCam
-289,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM OpticalDrive HighDPI
-290,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM HighDPI IntegratedMic
-291,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM DiscreteGPU LightWeight
-292,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM LightWeight LargeHDD
-293,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM LargeHDD LightWeight
-294,15,LargeHDD HighDPI Rugged BackLitKeyboard OpticalDrive SDCard
-295,15,LargeHDD HighDPI Rugged BackLitKeyboard IntegratedMic HighBattery
-296,15,LargeHDD HighDPI Rugged BackLitKeyboard HighBattery SDCard
-297,15,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM SDCard
-298,15,LargeHDD HighDPI Rugged BackLitKeyboard LightWeight HighRAM
-299,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM IntegratedWebCam LightWeight
-300,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM OpticalDrive HighBattery
-301,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM HighBattery SDCard
-302,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM SDCard IntegratedWebCam
-303,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM LightWeight OpticalDrive
-304,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM IntegratedMic HighBattery
-305,17,IntegratedMic HighBattery LightWeight OpticalDrive DiscreteGPU IntegratedMic
-306,17,IntegratedMic HighBattery LightWeight OpticalDrive HighRAM BackLitKeyboard
-307,17,IntegratedMic HighBattery LightWeight OpticalDrive HighDPI DiscreteGPU
-308,17,IntegratedMic HighBattery LightWeight OpticalDrive BackLitKeyboard SDCard
-309,17,IntegratedMic HighBattery LightWeight OpticalDrive LargeHDD IntegratedMic
-310,18,IntegratedMic HighBattery Rugged LightWeight DiscreteGPU SDCard
-311,18,IntegratedMic HighBattery Rugged LightWeight HighRAM IntegratedMic
-312,18,IntegratedMic HighBattery Rugged LightWeight LargeHDD BackLitKeyboard
-313,18,IntegratedMic HighBattery Rugged LightWeight OpticalDrive IntegratedMic
-314,18,IntegratedMic HighBattery Rugged LightWeight SDCard LargeHDD
-315,19,IntegratedWebCam HighBattery HighRAM SDCard IntegratedMic BackLitKeyboard
-316,19,IntegratedWebCam HighBattery HighRAM SDCard Rugged IntegratedMic
-317,19,IntegratedWebCam HighBattery HighRAM SDCard DiscreteGPU BackLitKeyboard
-318,19,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive BackLitKeyboard
-319,19,IntegratedWebCam HighBattery HighRAM SDCard BackLitKeyboard IntegratedWebCam
-320,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive BackLitKeyboard IntegratedWebCam
-321,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive DiscreteGPU Rugged
-322,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive Rugged DiscreteGPU
-323,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive HighDPI IntegratedMic
-324,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive IntegratedMic DiscreteGPU
-325,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive LightWeight HighDPI
-326,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight IntegratedWebCam OpticalDrive
-327,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight DiscreteGPU HighRAM
-328,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight SDCard IntegratedMic
+277,11,IntegratedWebCam IntegratedMic Rugged BackLitKeyboard HighRAM OpticalDrive SDCard
+278,12,IntegratedMic HighBattery Rugged BackLitKeyboard DiscreteGPU IntegratedMic
+279,12,IntegratedMic HighBattery Rugged BackLitKeyboard SDCard HighRAM
+280,12,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM OpticalDrive
+281,12,IntegratedMic HighBattery Rugged BackLitKeyboard LightWeight DiscreteGPU
+282,12,IntegratedMic HighBattery Rugged BackLitKeyboard HighDPI SDCard
+283,13,IntegratedMic HighBattery Rugged HighRAM LightWeight DiscreteGPU
+284,13,IntegratedMic HighBattery Rugged HighRAM HighDPI LargeHDD
+285,13,IntegratedMic HighBattery Rugged HighRAM BackLitKeyboard HighDPI
+286,13,IntegratedMic HighBattery Rugged HighRAM SDCard IntegratedMic
+287,13,IntegratedMic HighBattery Rugged HighRAM DiscreteGPU BackLitKeyboard
+288,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM OpticalDrive LightWeight
+289,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM DiscreteGPU IntegratedMic
+290,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM SDCard LargeHDD
+291,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM LightWeight DiscreteGPU
+292,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM LargeHDD IntegratedMic
+293,14,IntegratedMic HighBattery Rugged BackLitKeyboard HighRAM HighDPI IntegratedMic
+294,15,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM LightWeight
+295,15,LargeHDD HighDPI Rugged BackLitKeyboard IntegratedWebCam SDCard
+296,15,LargeHDD HighDPI Rugged BackLitKeyboard LightWeight SDCard
+297,15,LargeHDD HighDPI Rugged BackLitKeyboard SDCard LightWeight
+298,15,LargeHDD HighDPI Rugged BackLitKeyboard OpticalDrive IntegratedMic
+299,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM IntegratedWebCam LargeHDD
+300,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM IntegratedMic IntegratedWebCam
+301,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM SDCard DiscreteGPU
+302,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM HighBattery IntegratedMic
+303,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM OpticalDrive IntegratedMic
+304,16,LargeHDD HighDPI Rugged BackLitKeyboard HighRAM LightWeight OpticalDrive
+305,17,IntegratedMic HighBattery LightWeight OpticalDrive HighRAM HighDPI
+306,17,IntegratedMic HighBattery LightWeight OpticalDrive DiscreteGPU HighRAM
+307,17,IntegratedMic HighBattery LightWeight OpticalDrive LargeHDD HighDPI
+308,17,IntegratedMic HighBattery LightWeight OpticalDrive HighDPI IntegratedWebCam
+309,17,IntegratedMic HighBattery LightWeight OpticalDrive Rugged HighDPI
+310,18,IntegratedMic HighBattery Rugged LightWeight SDCard OpticalDrive
+311,18,IntegratedMic HighBattery Rugged LightWeight HighRAM BackLitKeyboard
+312,18,IntegratedMic HighBattery Rugged LightWeight LargeHDD HighRAM
+313,18,IntegratedMic HighBattery Rugged LightWeight OpticalDrive SDCard
+314,18,IntegratedMic HighBattery Rugged LightWeight DiscreteGPU HighRAM
+315,19,IntegratedWebCam HighBattery HighRAM SDCard DiscreteGPU OpticalDrive
+316,19,IntegratedWebCam HighBattery HighRAM SDCard IntegratedMic HighDPI
+317,19,IntegratedWebCam HighBattery HighRAM SDCard Rugged LargeHDD
+318,19,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive LargeHDD
+319,19,IntegratedWebCam HighBattery HighRAM SDCard LightWeight DiscreteGPU
+320,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive BackLitKeyboard LargeHDD
+321,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive Rugged HighDPI
+322,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive HighDPI LightWeight
+323,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive IntegratedMic IntegratedWebCam
+324,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive DiscreteGPU HighDPI
+325,20,IntegratedWebCam HighBattery HighRAM SDCard OpticalDrive LightWeight IntegratedWebCam
+326,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight SDCard HighDPI
+327,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight OpticalDrive IntegratedMic
+328,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight HighRAM SDCard
 329,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight LargeHDD IntegratedMic
-330,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight HighRAM DiscreteGPU
-331,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight OpticalDrive DiscreteGPU
-332,22,HighDPI HighBattery Rugged LightWeight OpticalDrive IntegratedMic
-333,22,HighDPI HighBattery Rugged LightWeight SDCard IntegratedWebCam
-334,22,HighDPI HighBattery Rugged LightWeight LargeHDD HighRAM
-335,22,HighDPI HighBattery Rugged LightWeight DiscreteGPU OpticalDrive
-336,22,HighDPI HighBattery Rugged LightWeight BackLitKeyboard IntegratedMic
-337,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive IntegratedWebCam DiscreteGPU
-338,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive Rugged HighBattery
-339,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive IntegratedMic Rugged
-340,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive DiscreteGPU LargeHDD
-341,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive LargeHDD Rugged
-342,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive HighDPI Rugged
+330,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight DiscreteGPU IntegratedMic
+331,21,HighDPI HighBattery Rugged BackLitKeyboard LightWeight IntegratedWebCam OpticalDrive
+332,22,HighDPI HighBattery Rugged LightWeight LargeHDD SDCard
+333,22,HighDPI HighBattery Rugged LightWeight BackLitKeyboard IntegratedWebCam
+334,22,HighDPI HighBattery Rugged LightWeight SDCard OpticalDrive
+335,22,HighDPI HighBattery Rugged LightWeight OpticalDrive DiscreteGPU
+336,22,HighDPI HighBattery Rugged LightWeight IntegratedWebCam OpticalDrive
+337,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive IntegratedMic DiscreteGPU
+338,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive HighDPI IntegratedWebCam
+339,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive LargeHDD IntegratedMic
+340,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive DiscreteGPU Rugged
+341,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive IntegratedWebCam HighBattery
+342,23,BackLitKeyboard LightWeight HighRAM SDCard OpticalDrive Rugged HighDPI
